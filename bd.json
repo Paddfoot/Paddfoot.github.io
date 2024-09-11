@@ -1,0 +1,896 @@
+{
+  "data": {
+    "characters": [
+      {
+        "id": "001",
+        "icon": "https://gensh.honeyhunterworld.com/img/ayaka_002_100.webp",
+        "name": "Ayaka",
+        "name_ru": "Аяка",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "102",
+        "icon": "https://gensh.honeyhunterworld.com/img/mualani_102_100.webp",
+        "name": "Heizo",
+        "name_ru": "Муалани",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "102",
+        "icon": "https://gensh.honeyhunterworld.com/img/mualani_102_100.webp",
+        "name": "Zhongli",
+        "name_ru": "Муалани",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "003",
+        "icon": "https://gensh.honeyhunterworld.com/img/qin_003_100.webp",
+        "name": "Qin",
+        "name_ru": "Джинн",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "005",
+        "icon": "https://gensh.honeyhunterworld.com/img/playerboy_005_100.webp",
+        "name": "PlayerBoy",
+        "name_ru": "Путешественник",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "all",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/none_35.webp?x32851"
+      },
+      {
+        "id": "005",
+        "icon": "https://gensh.honeyhunterworld.com/img/playerboy_005_100.webp",
+        "name": "PlayerGirl",
+        "name_ru": "Путешественник",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "all",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/none_35.webp?x32851"
+      },
+      {
+        "id": "006",
+        "icon": "https://gensh.honeyhunterworld.com/img/lisa_006_100.webp",
+        "name": "Lisa",
+        "name_ru": "Лиза",
+        "rarity": "4",
+        "weapon": "catalyst",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "014",
+        "icon": "https://gensh.honeyhunterworld.com/img/barbara_014_100.webp",
+        "name": "Barbara",
+        "name_ru": "Барбара",
+        "rarity": "4",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "015",
+        "icon": "https://gensh.honeyhunterworld.com/img/kaeya_015_100.webp",
+        "name": "Kaeya",
+        "name_ru": "Кэйа",
+        "rarity": "4",
+        "weapon": "sword",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "016",
+        "icon": "https://gensh.honeyhunterworld.com/img/diluc_016_100.webp",
+        "name": "Diluc",
+        "name_ru": "Дилюк",
+        "rarity": "5",
+        "weapon": "claymore",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "020",
+        "icon": "https://gensh.honeyhunterworld.com/img/razor_020_100.webp",
+        "name": "Razor",
+        "name_ru": "Рейзор",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "021",
+        "icon": "https://gensh.honeyhunterworld.com/img/ambor_021_100.webp",
+        "name": "Ambor",
+        "name_ru": "Эмбер",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "022",
+        "icon": "https://gensh.honeyhunterworld.com/img/venti_022_100.webp",
+        "name": "Venti",
+        "name_ru": "Венти",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "023",
+        "icon": "https://gensh.honeyhunterworld.com/img/xiangling_023_100.webp",
+        "name": "Xiangling",
+        "name_ru": "Сян Лин",
+        "rarity": "4",
+        "weapon": "polearm",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "024",
+        "icon": "https://gensh.honeyhunterworld.com/img/beidou_024_100.webp",
+        "name": "Beidou",
+        "name_ru": "Бейдоу",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "025",
+        "icon": "https://gensh.honeyhunterworld.com/img/xingqiu_025_100.webp",
+        "name": "Xingqiu",
+        "name_ru": "Синь Цю",
+        "rarity": "4",
+        "weapon": "sword",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "026",
+        "icon": "https://gensh.honeyhunterworld.com/img/xiao_026_100.webp",
+        "name": "Xiao",
+        "name_ru": "Сяо",
+        "rarity": "5",
+        "weapon": "polearm",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "027",
+        "icon": "https://gensh.honeyhunterworld.com/img/ningguang_027_100.webp",
+        "name": "Ningguang",
+        "name_ru": "Нин Гуан",
+        "rarity": "4",
+        "weapon": "catalyst",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "029",
+        "icon": "https://gensh.honeyhunterworld.com/img/klee_029_100.webp",
+        "name": "Klee",
+        "name_ru": "Кли",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "031",
+        "icon": "https://gensh.honeyhunterworld.com/img/fischl_031_100.webp",
+        "name": "Fischl",
+        "name_ru": "Фишль",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "032",
+        "icon": "https://gensh.honeyhunterworld.com/img/bennett_032_100.webp",
+        "name": "Bennett",
+        "name_ru": "Беннет",
+        "rarity": "4",
+        "weapon": "sword",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "033",
+        "icon": "https://gensh.honeyhunterworld.com/img/tartaglia_033_100.webp",
+        "name": "Tartaglia",
+        "name_ru": "Тарталья",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "034",
+        "icon": "https://gensh.honeyhunterworld.com/img/noel_034_100.webp",
+        "name": "Noel",
+        "name_ru": "Ноэль",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "035",
+        "icon": "https://gensh.honeyhunterworld.com/img/qiqi_035_100.webp",
+        "name": "Qiqi",
+        "name_ru": "Ци Ци",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "036",
+        "icon": "https://gensh.honeyhunterworld.com/img/chongyun_036_100.webp",
+        "name": "Chongyun",
+        "name_ru": "Чун Юнь",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "037",
+        "icon": "https://gensh.honeyhunterworld.com/img/ganyu_037_100.webp",
+        "name": "Ganyu",
+        "name_ru": "Гань Юй",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "038",
+        "icon": "https://gensh.honeyhunterworld.com/img/albedo_038_100.webp",
+        "name": "Albedo",
+        "name_ru": "Альбедо",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "039",
+        "icon": "https://gensh.honeyhunterworld.com/img/diona_039_100.webp",
+        "name": "Diona",
+        "name_ru": "Диона",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "041",
+        "icon": "https://gensh.honeyhunterworld.com/img/mona_041_100.webp",
+        "name": "Mona",
+        "name_ru": "Мона",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "042",
+        "icon": "https://gensh.honeyhunterworld.com/img/keqing_042_100.webp",
+        "name": "Keqing",
+        "name_ru": "Кэ Цин",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "043",
+        "icon": "https://gensh.honeyhunterworld.com/img/sucrose_043_100.webp",
+        "name": "Sucrose",
+        "name_ru": "Сахароза",
+        "rarity": "4",
+        "weapon": "catalyst",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "044",
+        "icon": "https://gensh.honeyhunterworld.com/img/xinyan_044_100.webp",
+        "name": "Xinyan",
+        "name_ru": "Синь Янь",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "045",
+        "icon": "https://gensh.honeyhunterworld.com/img/rosaria_045_100.webp",
+        "name": "Rosaria",
+        "name_ru": "Розария",
+        "rarity": "4",
+        "weapon": "polearm",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "046",
+        "icon": "https://gensh.honeyhunterworld.com/img/hutao_046_100.webp",
+        "name": "Hutao",
+        "name_ru": "Ху Тао",
+        "rarity": "5",
+        "weapon": "polearm",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "047",
+        "icon": "https://gensh.honeyhunterworld.com/img/kazuha_047_100.webp",
+        "name": "Kazuha",
+        "name_ru": "Кадзуха",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "048",
+        "icon": "https://gensh.honeyhunterworld.com/img/feiyan_048_100.webp",
+        "name": "Feiyan",
+        "name_ru": "Ян Фей",
+        "rarity": "4",
+        "weapon": "catalyst",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "049",
+        "icon": "https://gensh.honeyhunterworld.com/img/yoimiya_049_100.webp",
+        "name": "Yoimiya",
+        "name_ru": "Ёимия",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "050",
+        "icon": "https://gensh.honeyhunterworld.com/img/tohma_050_100.webp",
+        "name": "Tohma",
+        "name_ru": "Тома",
+        "rarity": "4",
+        "weapon": "polearm",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "051",
+        "icon": "https://gensh.honeyhunterworld.com/img/eula_051_100.webp",
+        "name": "Eula",
+        "name_ru": "Эола",
+        "rarity": "5",
+        "weapon": "claymore",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "053",
+        "icon": "https://gensh.honeyhunterworld.com/img/sayu_053_100.webp",
+        "name": "Sayu",
+        "name_ru": "Саю",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "054",
+        "icon": "https://gensh.honeyhunterworld.com/img/kokomi_054_100.webp",
+        "name": "Kokomi",
+        "name_ru": "Кокоми",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "055",
+        "icon": "https://gensh.honeyhunterworld.com/img/gorou_055_100.webp",
+        "name": "Gorou",
+        "name_ru": "Горо",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "056",
+        "icon": "https://gensh.honeyhunterworld.com/img/sara_056_100.webp",
+        "name": "Sara",
+        "name_ru": "Сара",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "057",
+        "icon": "https://gensh.honeyhunterworld.com/img/itto_057_100.webp",
+        "name": "Itto",
+        "name_ru": "Итто",
+        "rarity": "5",
+        "weapon": "claymore",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "058",
+        "icon": "https://gensh.honeyhunterworld.com/img/yae_058_100.webp",
+        "name": "Yae",
+        "name_ru": "Яэ Мико",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "060",
+        "icon": "https://gensh.honeyhunterworld.com/img/yelan_060_100.webp",
+        "name": "Yelan",
+        "name_ru": "Е Лань",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "061",
+        "icon": "https://gensh.honeyhunterworld.com/img/momoka_061_100.webp",
+        "name": "Momoka",
+        "name_ru": "Кирара",
+        "rarity": "4",
+        "weapon": "sword",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "062",
+        "icon": "https://gensh.honeyhunterworld.com/img/aloy_062_100.webp",
+        "name": "Aloy",
+        "name_ru": "Элой",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "063",
+        "icon": "https://gensh.honeyhunterworld.com/img/shenhe_063_100.webp",
+        "name": "Shenhe",
+        "name_ru": "Шэнь Хэ",
+        "rarity": "5",
+        "weapon": "polearm",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "064",
+        "icon": "https://gensh.honeyhunterworld.com/img/yunjin_064_100.webp",
+        "name": "Yunjin",
+        "name_ru": "Юнь Цзинь",
+        "rarity": "4",
+        "weapon": "polearm",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "065",
+        "icon": "https://gensh.honeyhunterworld.com/img/shinobu_065_100.webp",
+        "name": "Shinobu",
+        "name_ru": "Синобу",
+        "rarity": "4",
+        "weapon": "sword",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "066",
+        "icon": "https://gensh.honeyhunterworld.com/img/ayato_066_100.webp",
+        "name": "Ayato",
+        "name_ru": "Аято",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "067",
+        "icon": "https://gensh.honeyhunterworld.com/img/collei_067_100.webp",
+        "name": "Collei",
+        "name_ru": "Коллеи",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "068",
+        "icon": "https://gensh.honeyhunterworld.com/img/dori_068_100.webp",
+        "name": "Dori",
+        "name_ru": "Дори",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "069",
+        "icon": "https://gensh.honeyhunterworld.com/img/tighnari_069_100.webp",
+        "name": "Tighnari",
+        "name_ru": "Тигнари",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "070",
+        "icon": "https://gensh.honeyhunterworld.com/img/nilou_070_100.webp",
+        "name": "Nilou",
+        "name_ru": "Нилу",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "071",
+        "icon": "https://gensh.honeyhunterworld.com/img/cyno_071_100.webp",
+        "name": "Cyno",
+        "name_ru": "Сайно",
+        "rarity": "5",
+        "weapon": "polearm",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "072",
+        "icon": "https://gensh.honeyhunterworld.com/img/candace_072_100.webp",
+        "name": "Candace",
+        "name_ru": "Кандакия",
+        "rarity": "4",
+        "weapon": "polearm",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "073",
+        "icon": "https://gensh.honeyhunterworld.com/img/nahida_073_100.webp",
+        "name": "Nahida",
+        "name_ru": "Нахида",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "074",
+        "icon": "https://gensh.honeyhunterworld.com/img/layla_074_100.webp",
+        "name": "Layla",
+        "name_ru": "Лайла",
+        "rarity": "4",
+        "weapon": "sword",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "075",
+        "icon": "https://gensh.honeyhunterworld.com/img/wanderer_075_100.webp",
+        "name": "Wanderer",
+        "name_ru": "Странник",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "076",
+        "icon": "https://gensh.honeyhunterworld.com/img/faruzan_076_100.webp",
+        "name": "Faruzan",
+        "name_ru": "Фарузан",
+        "rarity": "4",
+        "weapon": "catalyst",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "077",
+        "icon": "https://gensh.honeyhunterworld.com/img/yaoyao_077_100.webp",
+        "name": "Yaoyao",
+        "name_ru": "Яо Яо",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "078",
+        "icon": "https://gensh.honeyhunterworld.com/img/alhatham_078_100.webp",
+        "name": "Alhatham",
+        "name_ru": "Аль-Хайтам",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "079",
+        "icon": "https://gensh.honeyhunterworld.com/img/dehya_079_100.webp",
+        "name": "Dehya",
+        "name_ru": "Дехья",
+        "rarity": "5",
+        "weapon": "claymore",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "080",
+        "icon": "https://gensh.honeyhunterworld.com/img/mika_080_100.webp",
+        "name": "Mika",
+        "name_ru": "Мика",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "081",
+        "icon": "https://gensh.honeyhunterworld.com/img/kaveh_081_100.webp",
+        "name": "Kaveh",
+        "name_ru": "Кавех",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "082",
+        "icon": "https://gensh.honeyhunterworld.com/img/baizhuer_082_100.webp",
+        "name": "Baizhuer",
+        "name_ru": "Бай Чжу",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "083",
+        "icon": "https://gensh.honeyhunterworld.com/img/linette_083_100.webp",
+        "name": "Linette",
+        "name_ru": "Линнет",
+        "rarity": "4",
+        "weapon": "sword",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "084",
+        "icon": "https://gensh.honeyhunterworld.com/img/liney_084_100.webp",
+        "name": "Liney",
+        "name_ru": "Линни",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "085",
+        "icon": "https://gensh.honeyhunterworld.com/img/freminet_085_100.webp",
+        "name": "Freminet",
+        "name_ru": "Фремине",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "086",
+        "icon": "https://gensh.honeyhunterworld.com/img/wriothesley_086_100.webp",
+        "name": "Wriothesley",
+        "name_ru": "Ризли",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "087",
+        "icon": "https://gensh.honeyhunterworld.com/img/neuvillette_087_100.webp",
+        "name": "Neuvillette",
+        "name_ru": "Нёвиллет",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "088",
+        "icon": "https://gensh.honeyhunterworld.com/img/charlotte_088_100.webp",
+        "name": "Charlotte",
+        "name_ru": "Шарлотта",
+        "rarity": "4",
+        "weapon": "catalyst",
+        "element": "cryo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/cryo_35.webp?x32851"
+      },
+      {
+        "id": "089",
+        "icon": "https://gensh.honeyhunterworld.com/img/furina_089_100.webp",
+        "name": "Furina",
+        "name_ru": "Фурина",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "090",
+        "icon": "https://gensh.honeyhunterworld.com/img/chevreuse_090_100.webp",
+        "name": "Chevreuse",
+        "name_ru": "Шеврёз",
+        "rarity": "4",
+        "weapon": "polearm",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "091",
+        "icon": "https://gensh.honeyhunterworld.com/img/navia_091_100.webp",
+        "name": "Navia",
+        "name_ru": "Навия",
+        "rarity": "5",
+        "weapon": "claymore",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "092",
+        "icon": "https://gensh.honeyhunterworld.com/img/gaming_092_100.webp",
+        "name": "Gaming",
+        "name_ru": "Ка Мин",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "093",
+        "icon": "https://gensh.honeyhunterworld.com/img/liuyun_093_100.webp",
+        "name": "Liuyun",
+        "name_ru": "Сянь Юнь",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "anemo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/anemo_35.webp?x32851"
+      },
+      {
+        "id": "094",
+        "icon": "https://gensh.honeyhunterworld.com/img/chiori_094_100.webp",
+        "name": "Chiori",
+        "name_ru": "Тиори",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "095",
+        "icon": "https://gensh.honeyhunterworld.com/img/sigewinne_095_100.webp",
+        "name": "Sigewinne",
+        "name_ru": "Сиджвин",
+        "rarity": "5",
+        "weapon": "bow",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "096",
+        "icon": "https://gensh.honeyhunterworld.com/img/arlecchino_096_100.webp",
+        "name": "Arlecchino",
+        "name_ru": "Арлекино",
+        "rarity": "5",
+        "weapon": "polearm",
+        "element": "pyro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/pyro_35.webp?x32851"
+      },
+      {
+        "id": "097",
+        "icon": "https://gensh.honeyhunterworld.com/img/sethos_097_100.webp",
+        "name": "Sethos",
+        "name_ru": "Сетос",
+        "rarity": "4",
+        "weapon": "bow",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "098",
+        "icon": "https://gensh.honeyhunterworld.com/img/clorinde_098_100.webp",
+        "name": "Clorinde",
+        "name_ru": "Клоринда",
+        "rarity": "5",
+        "weapon": "sword",
+        "element": "electro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/electro_35.webp?x32851"
+      },
+      {
+        "id": "099",
+        "icon": "https://gensh.honeyhunterworld.com/img/emilie_099_100.webp",
+        "name": "Emilie",
+        "name_ru": "Эмилия",
+        "rarity": "5",
+        "weapon": "polearm",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "100",
+        "icon": "https://gensh.honeyhunterworld.com/img/kachina_100_100.webp",
+        "name": "Kachina",
+        "name_ru": "Качина",
+        "rarity": "4",
+        "weapon": "polearm",
+        "element": "geo",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/geo_35.webp?x32851"
+      },
+      {
+        "id": "101",
+        "icon": "https://gensh.honeyhunterworld.com/img/kinich_101_100.webp",
+        "name": "Kinich",
+        "name_ru": "Кинич",
+        "rarity": "4",
+        "weapon": "claymore",
+        "element": "dendro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/dendro_35.webp?x32851"
+      },
+      {
+        "id": "102",
+        "icon": "https://gensh.honeyhunterworld.com/img/mualani_102_100.webp",
+        "name": "Mualani",
+        "name_ru": "Муалани",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      },
+      {
+        "id": "102",
+        "icon": "https://gensh.honeyhunterworld.com/img/mualani_102_100.webp",
+        "name": "Shougun",
+        "name_ru": "Муалани",
+        "rarity": "5",
+        "weapon": "catalyst",
+        "element": "hydro",
+        "element_icon": "https://gensh.honeyhunterworld.com/img/icons/element/hydro_35.webp?x32851"
+      }
+    ]
+  }
+}
