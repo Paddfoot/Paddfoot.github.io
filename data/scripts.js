@@ -3,7 +3,6 @@ document.querySelector('#menu-btn').addEventListener('click', () => {
     document.querySelector('#menu-btn').classList.toggle('clicked');
 });
 
-
 function rarity(star) {
     if (star > 4) {
         var stars = '';
@@ -38,31 +37,25 @@ function characters() {
             console.log(data['data']['characters'].length)
             while(i < data['data']['characters'].length) {
                 var grid_container = document.getElementById('grid-container');
-                var grid_element = document.createElement("div");
+                var grid_element = document.createElement("a");
                 grid_element.classList.add('grid-element');
+                grid_element.setAttribute('href', 'characterPV.html#' + data['data']['characters'][i]['nid']);
+                grid_element.setAttribute('style', 'text-decoration: none; z-index: 99;');
                 grid_element.innerHTML = '<div class="card" style="background-image: url(' + data['data']['characters'][i]['namecard'] + ');">' +
                     '<img class="cr-icon" src="' + data['data']['characters'][i]['icon'] + '">' +
-                    '<div style="width: 140px; text-align: right;">' +
+                    '<div style="width: 150px; text-align: right; display:grid; grid-template-columns:auto; justify-content: right;">' +
                         '<img class="cr-element" src="' + data['data']['characters'][i]['element_icon'] + '">' +
+                        '<img class="cr-weapon" src="https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/res/' + data['data']['characters'][i]['weapon'] + '.png">' +
                     '</div>' +
-                '</div>' +
-                '<div style="display: grid; grid-template-columns: auto auto; background-color: #384140;">' +
-                    '<div style="display: grid; grid-template-columns: auto; width: 66px;">' +
+                    '</div>' +
+                    '<div style="display: grid; grid-template-columns: auto; width: auto; background-color: #384140; border-radius: 0 0 8px 8px;">' +
                         '<div>' +
                             '<span class="name">' + data['data']['characters'][i]['name_ru'] + '</span>' +
                         '</div>' +
                         '<div>' +
-                            '<div class="rarity">' +
-                                '<img class="star" src="https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/res/star.webp">' +
-                                '<img class="star" src="https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/res/star.webp">' +
-                                '<img class="star" src="https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/res/star.webp">' +
-                                '<img class="star" src="https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/res/star.webp">' +
-                                '<img class="star" src="https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/res/star.webp">' +
-                            '</div>' +
+                            '<div class="rarity">' + rarity(data['data']['characters'][i]['rarity']) + '</div>' +
                         '</div>' +
-                    '</div>' +
-                    '<span>Лук</span>' +
-                '</div>';
+                    '</div>';
                 grid_container.appendChild(grid_element);
                 i++;
             }
