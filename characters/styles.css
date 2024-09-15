@@ -192,6 +192,10 @@ body {
     gap: 6px;
 }
 
+.cr-icon {
+    width: 128px;
+  }
+
 .rarity {
     display: flex;
     justify-content: center;
