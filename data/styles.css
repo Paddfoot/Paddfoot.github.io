@@ -129,9 +129,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item:active {
     background-color: #009691;
 }
 
@@ -151,4 +152,27 @@ body {
 
 .text-m {
     line-height: 64px;
+}
+
+
+
+
+@media screen and (max-width: 320px) and (max-width: 460px) {
+    .text-m {
+        font-size: 12px;
+        line-height: 45px;
+    }
+
+    .icon-m {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-item-cont {
+        width: 165px;
+    }
+
+    .menu-item-cont {
+        gap: 7px;
+    }
 }
