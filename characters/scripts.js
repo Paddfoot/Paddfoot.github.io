@@ -42,13 +42,13 @@ function characters() {
                 //grid_element.setAttribute('href', 'characterPV.html#' + data['data']['characters'][i]['nid']);
                 //grid_element.setAttribute('style', 'text-decoration: none; z-index: 99;');
                 grid_element.innerHTML = '<a class="card" href="">' +
-                    '<div class="card-cont" style="background-image: url(https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + data['data']['characters'][i]['nid'] + '/' + data['data']['characters'][i]['nid'] + '_namecard_pv.jpeg);">' +
+                    '<div class="card-cont" loading="lazy" style="background-image: url(https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + data['data']['characters'][i]['nid'] + '/' + data['data']['characters'][i]['nid'] + '_namecard_pv.jpeg);">' +
                         '<div>' +
-                            '<img class="cr-icon" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + data['data']['characters'][i]['nid'] + '/' + data['data']['characters'][i]['nid'] + '_pv.png">' +
+                            '<img class="cr-icon" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + data['data']['characters'][i]['nid'] + '/' + data['data']['characters'][i]['nid'] + '_pv.png">' +
                         '</div>' +
                         '<div class="card-el">' +
-                            '<img class="cr-element" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/elements/' + data['data']['characters'][i]['element'] + '.webp">' +
-                            '<img class="cr-weapon-type" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/res/' + data['data']['characters'][i]['weapon'] + '.png">' +
+                            '<img class="cr-element" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/elements/' + data['data']['characters'][i]['element'] + '.webp">' +
+                            '<img class="cr-weapon-type" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/res/' + data['data']['characters'][i]['weapon'] + '.png">' +
                         '</div>' +
                     '</div>' +
                     '<div class="card-bottom">' +
