@@ -171,17 +171,28 @@ body {
     width: 267px;
 }
 
+.card {
+    text-decoration: none;
+}
+
+.cr-name {
+    font-size: 20px;
+}
+
 .card-cont {
     display: grid;
     grid-template-columns: auto auto;
     width: 267px;
     height: 128px;
     background-size: cover;
+    border-radius: 12px 12px 0 0;
 }
 
 .card-bottom {
-    background-color: #002524;
+    background-color: #2b3534;
     text-align: center;
+    padding-top: 4px;
+    border-radius: 0 0 12px 12px;
 }
 
 .card-el {
@@ -194,11 +205,20 @@ body {
 
 .cr-icon {
     width: 128px;
-  }
+}
+
+.cr-element, .cr-weapon-type {
+    width: 40px;
+    background: rgba(56, 62, 68, 0.658);
+    border-radius: 10px;
+    padding: 3px;
+}
 
 .rarity {
     display: flex;
     justify-content: center;
+    margin-top: 3px;
+    padding-bottom: 8px;
 }
 
 .star {
@@ -243,17 +263,40 @@ body {
         grid-template-columns: auto auto;
         width: 109px;
         height: 52px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .card-bottom {
+        padding: unset;
+        border-radius: 0 0 6px 6px;
     }
 
     .cr-icon {
         width: 52px;
     }
 
+    .card-el {
+        gap: 3px;
+    }
+
     .cr-element, .cr-weapon-type {
-        width: 20px;
+        width: 16px;
+        padding: unset;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    .rarity {
+        margin-top: 2px;
+        padding-bottom: 4px;
     }
 
     .star {
-        width: 14px;
+        width: 10px;
+    }
+
+    .cr-name {
+        font-size: 12px;
+        display: block;
     }
 }
