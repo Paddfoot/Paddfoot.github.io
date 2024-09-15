@@ -7,8 +7,8 @@ from PIL import Image
 def resize_(d, s):
     image_path = 'data/characters/' + d + '/' + d + '.' + s
     img = Image.open(image_path)
-    #new_image = img.resize((128, 128))
-    new_image = img.resize((32, 32))
+    new_image = img.resize((128, 128))
+    #new_image = img.resize((32, 32))
     new_image.save('data/characters/' + d + '/' + d + '_pv.' + s)
 
 def dow(d):
