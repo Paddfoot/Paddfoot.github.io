@@ -53,15 +53,21 @@ function char_add(data, i) {
 function char(data) {
     while (true) {
         const numbers = [];
-        console.log(data['data']['characters'].length)
         for (i = data['data']['characters'].length - 1; i >= 0; i--) {
-            console.log(data['data']['characters'][i]['id'])
             numbers.push(data['data']['characters'][i]['id'])
         }
-        const maxValue = Math.max.apply(null, numbers);
-        //обратите внимание, что в записи данного метода обязателен null. 
-        //Если забыть в записи данного выражения null, то в переменную maxValue вернётся -Infinity.
-        console.log(numbers);
+        maxValue = Math.max.apply(null, numbers);
+        for (i = data['data']['characters'].length - 1; i >= 0; i--) {
+            while (maxValue >= -1) {
+                for (i = data['data']['characters'].length - 1; i >= 0; i--) {
+                    if (data['data']['characters'][i]['id'] == maxValue) {
+                        char_add(data, i)
+                        console.log(maxValue);
+                        maxValue = maxValue - 1;
+                    }
+                }
+            }
+        }
         break;
     }
 }
@@ -75,16 +81,6 @@ function characters() {
         if (xhr.status === 200) {
             var data = xhr.response;
             char(data)
-            //let l = 0;
-            //while(l < data['data']['characters'].length) {
-            //    char_add(data, l)
-            //    l++;
-            //}
-            //let e = 0;
-            //while(e < data['data']['characters'].length) {
-            //    char_add(data, e)
-            //    e++;
-            //}
         }
     };
     xhr.send();
