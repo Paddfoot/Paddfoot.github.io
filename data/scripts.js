@@ -8,7 +8,7 @@ function rarity(star) {
         var stars = '';
         let i = 0;
         while (i <= 4) {
-            stars += '<img class="star" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/res/star.webp">'
+            stars += '<img class="star" src="../data/res/star.webp">'
             i++;
         }
         return stars;
@@ -16,7 +16,7 @@ function rarity(star) {
         var stars = '';
         let i = 0;
         while (i <= 3) {
-            stars += '<img class="star" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/res/star.webp">'
+            stars += '<img class="star" src="../data/res/star.webp">'
             i++;
         }
         return stars;
@@ -24,14 +24,14 @@ function rarity(star) {
 }
 
 function grid_element_(nid, element, weapon, name, rarity_) {
-    var arg = '<a class="card" href="' + nid + '">' +
-        '<div class="card-cont" loading="lazy" style="background-image: url(https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + nid + '/' + nid + '_namecard_pv.jpeg);">' +
+    var arg = '<a class="card" href="' + nid + '/index.html">' +
+        '<div class="card-cont" loading="lazy" style="background-image: url(../data/characters/' + nid + '/' + nid + '_namecard_pv.jpeg);">' +
             '<div>' +
-                '<img class="cr-icon" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + nid + '/' + nid + '_pv.png">' +
+                '<img class="cr-icon" loading="lazy" src="../data/characters/' + nid + '/' + nid + '_pv.png">' +
             '</div>' +
             '<div class="card-el">' +
-                '<img class="cr-element" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/elements/' + element + '.webp">' +
-                '<img class="cr-weapon-type" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/res/' + weapon + '.png">' +
+                '<img class="cr-element" loading="lazy" src="../data/elements/' + element + '.webp">' +
+                '<img class="cr-weapon-type" loading="lazy" src="../data/res/' + weapon + '.png">' +
             '</div>' +
         '</div>' +
         '<div class="card-bottom">' +
@@ -62,7 +62,6 @@ function char(data) {
                 for (i = data['data']['characters'].length - 1; i >= 0; i--) {
                     if (data['data']['characters'][i]['id'] == maxValue) {
                         char_add(data, i)
-                        console.log(maxValue);
                         maxValue = maxValue - 1;
                     }
                 }
@@ -86,4 +85,9 @@ function characters() {
     xhr.send();
 };
 
-characters();
+
+if (document.querySelector('.grid-container') == null){
+    console.log('Non')
+}else{
+    characters();
+}
