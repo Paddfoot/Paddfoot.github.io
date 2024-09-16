@@ -2,6 +2,7 @@
     "data": {
       "characters": [
         {
+          "id": "26",
           "nid": "Albedo",
           "name": "Albedo",
           "name_ru": "Альбедо",
@@ -13,6 +14,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Albedo/UI_NameCardPic_Albedo_P_min.jpeg"
         },
         {
+          "id": "62",
           "nid": "Alhatham",
           "name": "Alhaitham",
           "name_ru": "Аль-Хайтам",
@@ -24,6 +26,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Alhatham/UI_NameCardPic_Alhatham_P_min.jpeg"
         },
         {
+          "id": "37",
           "nid": "Aloy",
           "name": "Aloy",
           "name_ru": "Элой",
@@ -35,6 +38,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Aloy/UI_NameCardPic_Aloy_P_min.jpeg"
         },
         {
+          "id": "1",
           "nid": "Ambor",
           "name": "Amber",
           "name_ru": "Эмбер",
@@ -46,6 +50,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Ambor/UI_NameCardPic_Ambor_P_min.jpeg"
         },
         {
+          "id": "80",
           "nid": "Arlecchino",
           "name": "Arlecchino",
           "name_ru": "Арлекино",
@@ -57,6 +62,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Arlecchino/UI_NameCardPic_Arlecchino_P_min.jpeg"
         },
         {
+          "id": "34",
           "nid": "Ayaka",
           "name": "Kamisato Ayaka",
           "name_ru": "Аяка",
@@ -68,6 +74,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Ayaka/UI_NameCardPic_Ayaka_P_min.jpeg"
         },
         {
+          "id": "47",
           "nid": "Ayato",
           "name": "Kamisato Ayato",
           "name_ru": "Аято",
@@ -79,6 +86,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Ayato/UI_NameCardPic_Ayato_P_min.jpeg"
         },
         {
+          "id": "66",
           "nid": "Baizhuer",
           "name": "Baizhu",
           "name_ru": "Бай Чжу",
@@ -90,6 +98,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Baizhuer/UI_NameCardPic_Baizhuer_P_min.jpeg"
         },
         {
+          "id": "4",
           "nid": "Barbara",
           "name": "Barbara",
           "name_ru": "Барбара",
@@ -101,6 +110,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Barbara/UI_NameCardPic_Barbara_P_min.jpeg"
         },
         {
+          "id": "7",
           "nid": "Beidou",
           "name": "Beidou",
           "name_ru": "Бэй Доу",
@@ -112,6 +122,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Beidou/UI_NameCardPic_Beidou_P_min.jpeg"
         },
         {
+          "id": "11",
           "nid": "Bennett",
           "name": "Bennett",
           "name_ru": "Беннет",
@@ -123,6 +134,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Bennett/UI_NameCardPic_Bennett_P_min.jpeg"
         },
         {
+          "id": "54",
           "nid": "Candace",
           "name": "Candace",
           "name_ru": "Кандакия",
@@ -134,6 +146,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Candace/UI_NameCardPic_Candace_P_min.jpeg"
         },
         {
+          "id": "73",
           "nid": "Charlotte",
           "name": "Charlotte",
           "name_ru": "Шарлотта",
@@ -145,6 +158,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Charlotte/UI_NameCardPic_Charlotte_P_min.jpeg"
         },
         {
+          "id": "76",
           "nid": "Chevreuse",
           "name": "Chevreuse",
           "name_ru": "Шеврёз",
@@ -156,6 +170,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Chevreuse/UI_NameCardPic_Chevreuse_P_min.jpeg"
         },
         {
+          "id": "79",
           "nid": "Chiori",
           "name": "Chiori",
           "name_ru": "Тиори",
@@ -167,6 +182,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Chiori/UI_NameCardPic_Chiori_P_min.jpeg"
         },
         {
+          "id": "13",
           "nid": "Chongyun",
           "name": "Chongyun",
           "name_ru": "Чун Юнь",
@@ -178,6 +194,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Chongyun/UI_NameCardPic_Chongyun_P_min.jpeg"
         },
         {
+          "id": "82",
           "nid": "Clorinde",
           "name": "Clorinde",
           "name_ru": "Клоринда",
@@ -189,6 +206,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Clorinde/UI_NameCardPic_Clorinde_P_min.jpeg"
         },
         {
+          "id": "51",
           "nid": "Collei",
           "name": "Collei",
           "name_ru": "Коллеи",
@@ -200,6 +218,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Collei/UI_NameCardPic_Collei_P_min.jpeg"
         },
         {
+          "id": "55",
           "nid": "Cyno",
           "name": "Cyno",
           "name_ru": "Сайно",
@@ -211,6 +230,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Cyno/UI_NameCardPic_Cyno_P_min.jpeg"
         },
         {
+          "id": "63",
           "nid": "Dehya",
           "name": "Dehya",
           "name_ru": "Дэхья",
@@ -222,6 +242,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Dehya/UI_NameCardPic_Dehya_P_min.jpeg"
         },
         {
+          "id": "16",
           "nid": "Diluc",
           "name": "Diluc",
           "name_ru": "Дилюк",
@@ -233,6 +254,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Diluc/UI_NameCardPic_Diluc_P_min.jpeg"
         },
         {
+          "id": "22",
           "nid": "Diona",
           "name": "Diona",
           "name_ru": "Диона",
@@ -244,6 +266,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Diona/UI_NameCardPic_Diona_P_min.jpeg"
         },
         {
+          "id": "53",
           "nid": "Dori",
           "name": "Dori",
           "name_ru": "Дори",
@@ -255,6 +278,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Dori/UI_NameCardPic_Dori_P_min.jpeg"
         },
         {
+          "id": "84",
           "nid": "Emilie",
           "name": "Emilie",
           "name_ru": "Эмилия",
@@ -266,6 +290,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Emilie/UI_NameCardPic_Emilie_P_min.jpeg"
         },
         {
+          "id": "32",
           "nid": "Eula",
           "name": "Eula",
           "name_ru": "Эола",
@@ -277,6 +302,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Eula/UI_NameCardPic_Eula_P_min.jpeg"
         },
         {
+          "id": "59",
           "nid": "Faruzan",
           "name": "Faruzan",
           "name_ru": "Фарузан",
@@ -288,6 +314,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Faruzan/UI_NameCardPic_Faruzan_P_min.jpeg"
         },
         {
+          "id": "31",
           "nid": "Feiyan",
           "name": "Yanfei",
           "name_ru": "Янь Фэй",
@@ -299,6 +326,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Feiyan/UI_NameCardPic_Feiyan_P_min.jpeg"
         },
         {
+          "id": "10",
           "nid": "Fischl",
           "name": "Fischl",
           "name_ru": "Фишль",
@@ -310,6 +338,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Fischl/UI_NameCardPic_Fischl_P_min.jpeg"
         },
         {
+          "id": "70",
           "nid": "Freminet",
           "name": "Freminet",
           "name_ru": "Фремине",
@@ -321,6 +350,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Freminet/UI_NameCardPic_Freminet_P_min.jpeg"
         },
         {
+          "id": "74",
           "nid": "Furina",
           "name": "Furina",
           "name_ru": "Фурина",
@@ -332,6 +362,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Furina/UI_NameCardPic_Furina_P_min.jpeg"
         },
         {
+          "id": "77",
           "nid": "Gaming",
           "name": "Gaming",
           "name_ru": "Ка Мин",
@@ -343,6 +374,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Gaming/UI_NameCardPic_Gaming_P_min.jpeg"
         },
         {
+          "id": "27",
           "nid": "Ganyu",
           "name": "Ganyu",
           "name_ru": "Гань Юй",
@@ -354,6 +386,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Ganyu/UI_NameCardPic_Ganyu_P_min.jpeg"
         },
         {
+          "id": "42",
           "nid": "Gorou",
           "name": "Gorou",
           "name_ru": "Горо",
@@ -365,6 +398,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Gorou/UI_NameCardPic_Gorou_P_min.jpeg"
         },
         {
+          "id": "50",
           "nid": "Heizo",
           "name": "Shikanoin Heizou",
           "name_ru": "Хэйдзо",
@@ -376,6 +410,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Heizo/UI_NameCardPic_Heizo_P_min.jpeg"
         },
         {
+          "id": "29",
           "nid": "Hutao",
           "name": "Hu Tao",
           "name_ru": "Ху Тао",
@@ -387,6 +422,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Hutao/UI_NameCardPic_Hutao_P_min.jpeg"
         },
         {
+          "id": "43",
           "nid": "Itto",
           "name": "Arataki Itto",
           "name_ru": "Итто",
@@ -398,6 +434,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Itto/UI_NameCardPic_Itto_P_min.jpeg"
         },
         {
+          "id": "85",
           "nid": "Kachina",
           "name": "Kachina",
           "name_ru": "Качина",
@@ -409,6 +446,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kachina/UI_NameCardPic_Kachina_P_min.jpeg"
         },
         {
+          "id": "2",
           "nid": "Kaeya",
           "name": "Kaeya",
           "name_ru": "Кэйа",
@@ -420,6 +458,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kaeya/UI_NameCardPic_Kaeya_P_min.jpeg"
         },
         {
+          "id": "65",
           "nid": "Kaveh",
           "name": "Kaveh",
           "name_ru": "Кавех",
@@ -431,6 +470,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kaveh/UI_NameCardPic_Kaveh_P_min.jpeg"
         },
         {
+          "id": "33",
           "nid": "Kazuha",
           "name": "Kaedehara Kazuha",
           "name_ru": "Кадзуха",
@@ -442,6 +482,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kazuha/UI_NameCardPic_Kazuha_P_min.jpeg"
         },
         {
+          "id": "19",
           "nid": "Keqing",
           "name": "Keqing",
           "name_ru": "Кэ Цин",
@@ -453,6 +494,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Keqing/UI_NameCardPic_Keqing_P_min.jpeg"
         },
         {
+          "id": "87",
           "nid": "Kinich",
           "name": "Kinich",
           "name_ru": "Кинич",
@@ -464,6 +506,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kinich/UI_NameCardPic_Kinich_P_min.jpeg"
         },
         {
+          "id": "21",
           "nid": "Klee",
           "name": "Klee",
           "name_ru": "Кли",
@@ -475,6 +518,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Klee/UI_NameCardPic_Klee_P_min.jpeg"
         },
         {
+          "id": "40",
           "nid": "Kokomi",
           "name": "Sangonomiya Kokomi",
           "name_ru": "Кокоми",
@@ -486,6 +530,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kokomi/UI_NameCardPic_Kokomi_P_min.jpeg"
         },
         {
+          "id": "58",
           "nid": "Layla",
           "name": "Layla",
           "name_ru": "Лайла",
@@ -497,6 +542,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Layla/UI_NameCardPic_Layla_P_min.jpeg"
         },
         {
+          "id": "68",
           "nid": "Linette",
           "name": "Lynette",
           "name_ru": "Линетт",
@@ -508,6 +554,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Linette/UI_NameCardPic_Linette_P_min.jpeg"
         },
         {
+          "id": "69",
           "nid": "Liney",
           "name": "Lyney",
           "name_ru": "Лини",
@@ -519,6 +566,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Liney/UI_NameCardPic_Liney_P_min.jpeg"
         },
         {
+          "id": "3",
           "nid": "Lisa",
           "name": "Lisa",
           "name_ru": "Лиза",
@@ -530,6 +578,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Lisa/UI_NameCardPic_Lisa_P_min.jpeg"
         },
         {
+          "id": "78",
           "nid": "Liuyun",
           "name": "Xianyun",
           "name_ru": "Сянь Юнь",
@@ -541,6 +590,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Liuyun/UI_NameCardPic_Liuyun_P_min.jpeg"
         },
         {
+          "id": "64",
           "nid": "Mika",
           "name": "Mika",
           "name_ru": "Мика",
@@ -552,6 +602,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Mika/UI_NameCardPic_Mika_P_min.jpeg"
         },
         {
+          "id": "67",
           "nid": "Momoka",
           "name": "Kirara",
           "name_ru": "Кирара",
@@ -563,6 +614,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Momoka/UI_NameCardPic_Kirara_P_min.jpeg"
         },
         {
+          "id": "18",
           "nid": "Mona",
           "name": "Mona",
           "name_ru": "Мона",
@@ -574,6 +626,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Mona/UI_NameCardPic_Mona_P_min.jpeg"
         },
         {
+          "id": "86",
           "nid": "Mualani",
           "name": "Mualani",
           "name_ru": "Муалани",
@@ -585,6 +638,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Mualani/UI_NameCardPic_Mualani_P_min.jpeg"
         },
         {
+          "id": "57",
           "nid": "Nahida",
           "name": "Nahida",
           "name_ru": "Нахида",
@@ -596,6 +650,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Nahida/UI_NameCardPic_Nahida_P_min.jpeg"
         },
         {
+          "id": "75",
           "nid": "Navia",
           "name": "Navia",
           "name_ru": "Навия",
@@ -607,6 +662,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Navia/UI_NameCardPic_Navia_P_min.jpeg"
         },
         {
+          "id": "71",
           "nid": "Neuvillette",
           "name": "Neuvillette",
           "name_ru": "Нёвиллет",
@@ -618,6 +674,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Neuvillette/UI_NameCardPic_Neuvillette_P_min.jpeg"
         },
         {
+          "id": "56",
           "nid": "Nilou",
           "name": "Nilou",
           "name_ru": "Нилу",
@@ -629,6 +686,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Nilou/UI_NameCardPic_Nilou_P_min.jpeg"
         },
         {
+          "id": "9",
           "nid": "Ningguang",
           "name": "Ningguang",
           "name_ru": "Нин Гуан",
@@ -640,6 +698,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Ningguang/UI_NameCardPic_Ningguang_P_min.jpeg"
         },
         {
+          "id": "12",
           "nid": "Noel",
           "name": "Noelle",
           "name_ru": "Ноэлль",
@@ -651,6 +710,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Noel/UI_NameCardPic_Noel_P_min.jpeg"
         },
         {
+          "id": "0",
           "nid": "PlayerBoy",
           "name": "Traveler",
           "name_ru": "Путешественник",
@@ -662,6 +722,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/PlayerBoy/UI_NameCardPic_PlayerBoy_P_min.jpeg"
         },
         {
+          "id": "-1",
           "nid": "PlayerGirl",
           "name": "Traveler",
           "name_ru": "Путешественница",
@@ -673,6 +734,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/PlayerGirl/UI_NameCardPic_PlayerGirl_P_min.jpeg"
         },
         {
+          "id": "15",
           "nid": "Qin",
           "name": "Jean",
           "name_ru": "Джинн",
@@ -684,6 +746,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Qin/UI_NameCardPic_Qin_P_min.jpeg"
         },
         {
+          "id": "17",
           "nid": "Qiqi",
           "name": "Qiqi",
           "name_ru": "Ци Ци",
@@ -695,6 +758,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Qiqi/UI_NameCardPic_Qiqi_P_min.jpeg"
         },
         {
+          "id": "5",
           "nid": "Razor",
           "name": "Razor",
           "name_ru": "Рэйзор",
@@ -706,6 +770,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Razor/UI_NameCardPic_Razor_P_min.jpeg"
         },
         {
+          "id": "30",
           "nid": "Rosaria",
           "name": "Rosaria",
           "name_ru": "Розария",
@@ -717,6 +782,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Rosaria/UI_NameCardPic_Rosaria_P_min.jpeg"
         },
         {
+          "id": "38",
           "nid": "Sara",
           "name": "Kujou Sara",
           "name_ru": "Сара",
@@ -728,6 +794,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Sara/UI_NameCardPic_Sara_P_min.jpeg"
         },
         {
+          "id": "35",
           "nid": "Sayu",
           "name": "Sayu",
           "name_ru": "Саю",
@@ -739,6 +806,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Sayu/UI_NameCardPic_Sayu_P_min.jpeg"
         },
         {
+          "id": "81",
           "nid": "Sethos",
           "name": "Sethos",
           "name_ru": "Сетос",
@@ -750,6 +818,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Sethos/UI_NameCardPic_Sethos_P_min.jpeg"
         },
         {
+          "id": "45",
           "nid": "Shenhe",
           "name": "Shenhe",
           "name_ru": "Шэнь Хэ",
@@ -761,6 +830,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Shenhe/UI_NameCardPic_Shenhe_P_min.jpeg"
         },
         {
+          "id": "49",
           "nid": "Shinobu",
           "name": "Kuki Shinobu",
           "name_ru": "Синобу",
@@ -772,6 +842,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Shinobu/UI_NameCardPic_Shinobu_P_min.jpeg"
         },
         {
+          "id": "39",
           "nid": "Shougun",
           "name": "Raiden Shogun",
           "name_ru": "Райден",
@@ -783,6 +854,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Shougun/UI_NameCardPic_Shougun_P_min.jpeg"
         },
         {
+          "id": "83",
           "nid": "Sigewinne",
           "name": "Sigewinne",
           "name_ru": "Сиджвин",
@@ -794,6 +866,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Sigewinne/UI_NameCardPic_Sigewinne_P_min.jpeg"
         },
         {
+          "id": "14",
           "nid": "Sucrose",
           "name": "Sucrose",
           "name_ru": "Сахароза",
@@ -805,6 +878,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Sucrose/UI_NameCardPic_Sucrose_P_min.jpeg"
         },
         {
+          "id": "23",
           "nid": "Tartaglia",
           "name": "Tartaglia",
           "name_ru": "Тарталия",
@@ -816,6 +890,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Tartaglia/UI_NameCardPic_Tartaglia_P_min.jpeg"
         },
         {
+          "id": "52",
           "nid": "Tighnari",
           "name": "Tighnari",
           "name_ru": "Тигнари",
@@ -827,6 +902,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Tighnari/UI_NameCardPic_Tighnari_P_min.jpeg"
         },
         {
+          "id": "41",
           "nid": "Tohma",
           "name": "Toma",
           "name_ru": "Тома",
@@ -838,6 +914,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Tohma/UI_NameCardPic_Tohma_P_min.jpeg"
         },
         {
+          "id": "20",
           "nid": "Venti",
           "name": "Venti",
           "name_ru": "Венти",
@@ -849,6 +926,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Venti/UI_NameCardPic_Venti_P_min.jpeg"
         },
         {
+          "id": "60",
           "nid": "Wanderer",
           "name": "Wanderer",
           "name_ru": "Странник",
@@ -860,6 +938,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Wanderer/UI_NameCardPic_Wanderer_P_min.jpeg"
         },
         {
+          "id": "72",
           "nid": "Wriothesley",
           "name": "Wriothesley",
           "name_ru": "Ризли",
@@ -871,6 +950,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Wriothesley/UI_NameCardPic_Wriothesley_P_min.jpeg"
         },
         {
+          "id": "6",
           "nid": "Xiangling",
           "name": "Xiangling",
           "name_ru": "Сян Лин",
@@ -882,6 +962,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Xiangling/UI_NameCardPic_Xiangling_P_min.jpeg"
         },
         {
+          "id": "28",
           "nid": "Xiao",
           "name": "Xiao",
           "name_ru": "Сяо",
@@ -893,6 +974,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Xiao/UI_NameCardPic_Xiao_P_min.jpeg"
         },
         {
+          "id": "8",
           "nid": "Xingqiu",
           "name": "Xingqiu",
           "name_ru": "Син Цю",
@@ -904,6 +986,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Xingqiu/UI_NameCardPic_Xingqiu_P_min.jpeg"
         },
         {
+          "id": "24",
           "nid": "Xinyan",
           "name": "Xinyan",
           "name_ru": "Синь Янь",
@@ -915,6 +998,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Xinyan/UI_NameCardPic_Xinyan_P_min.jpeg"
         },
         {
+          "id": "46",
           "nid": "Yae",
           "name": "Yae Miko",
           "name_ru": "Яэ Мико",
@@ -926,6 +1010,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Yae/UI_NameCardPic_Yae1_P_min.jpeg"
         },
         {
+          "id": "61",
           "nid": "Yaoyao",
           "name": "Yaoyao",
           "name_ru": "Яо Яо",
@@ -937,6 +1022,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Yaoyao/UI_NameCardPic_Yaoyao_P_min.jpeg"
         },
         {
+          "id": "48",
           "nid": "Yelan",
           "name": "Yelan",
           "name_ru": "Е Лань",
@@ -948,6 +1034,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Yelan/UI_NameCardPic_Yelan_P_min.jpeg"
         },
         {
+          "id": "36",
           "nid": "Yoimiya",
           "name": "Yoimiya",
           "name_ru": "Ёимия",
@@ -959,6 +1046,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Yoimiya/UI_NameCardPic_Yoimiya_P_min.jpeg"
         },
         {
+          "id": "44",
           "nid": "Yunjin",
           "name": "Yun Jin",
           "name_ru": "Юнь Цзинь",
@@ -970,6 +1058,7 @@
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Yunjin/UI_NameCardPic_Yunjin_P_min.jpeg"
         },
         {
+          "id": "25",
           "nid": "Zhongli",
           "name": "Zhongli",
           "name_ru": "Чжун Ли",
