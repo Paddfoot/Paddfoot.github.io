@@ -43,7 +43,7 @@ function grid_element_(nid, element, weapon, name, rarity_) {
 }
 
 function char_add(data, i) {
-    var grid_container = document.getElementById('grid-container');
+    var grid_container = document.querySelector('.grid-container');
     var grid_element = document.createElement("div");
     grid_element.classList.add('grid-element');
     grid_element.innerHTML = grid_element_(data['data']['characters'][i]['nid'], data['data']['characters'][i]['element'], data['data']['characters'][i]['weapon'], data['data']['characters'][i]['name_ru'], data['data']['characters'][i]['rarity']);
