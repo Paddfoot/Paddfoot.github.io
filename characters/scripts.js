@@ -23,29 +23,52 @@ function rarity(star) {
     }
 }
 
-function char(int, data, i) {
-    if (data['data']['characters'][i]['rarity'] == int) {
-        var grid_container = document.getElementById('grid-container');
-        var grid_element = document.createElement("div");
-        grid_element.classList.add('grid-element');
-        //grid_element.setAttribute('href', 'characterPV.html#' + data['data']['characters'][i]['nid']);
-        //grid_element.setAttribute('style', 'text-decoration: none; z-index: 99;');
-        grid_element.innerHTML = '<a class="card" href="">' +
-            '<div class="card-cont" loading="lazy" style="background-image: url(https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + data['data']['characters'][i]['nid'] + '/' + data['data']['characters'][i]['nid'] + '_namecard_pv.jpeg);">' +
-                '<div>' +
-                    '<img class="cr-icon" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + data['data']['characters'][i]['nid'] + '/' + data['data']['characters'][i]['nid'] + '_pv.png">' +
-                '</div>' +
-                '<div class="card-el">' +
-                    '<img class="cr-element" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/elements/' + data['data']['characters'][i]['element'] + '.webp">' +
-                    '<img class="cr-weapon-type" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/res/' + data['data']['characters'][i]['weapon'] + '.png">' +
-                '</div>' +
+function grid_element_(nid, element, weapon, name, rarity_) {
+    var arg = '<a class="card" href="' + nid + '">' +
+        '<div class="card-cont" loading="lazy" style="background-image: url(https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + nid + '/' + nid + '_namecard_pv.jpeg);">' +
+            '<div>' +
+                '<img class="cr-icon" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/characters/' + nid + '/' + nid + '_pv.png">' +
             '</div>' +
-            '<div class="card-bottom">' +
-                '<span class="cr-name">' + data['data']['characters'][i]['name_ru'] + '</span>' +
-                '<div class="rarity">' + rarity(data['data']['characters'][i]['rarity']) + '</div>' +
+            '<div class="card-el">' +
+                '<img class="cr-element" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/elements/' + element + '.webp">' +
+                '<img class="cr-weapon-type" loading="lazy" src="https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/main/data/res/' + weapon + '.png">' +
             '</div>' +
-        '</a>';
-        grid_container.appendChild(grid_element);
+        '</div>' +
+        '<div class="card-bottom">' +
+            '<span class="cr-name">' + name + '</span>' +
+            '<div class="rarity">' + rarity(rarity_) + '</div>' +
+        '</div>' +
+    '</a>'
+    return arg
+}
+
+function char_add(data, i) {
+    var grid_container = document.getElementById('grid-container');
+    var grid_element = document.createElement("div");
+    grid_element.classList.add('grid-element');
+    grid_element.innerHTML = grid_element_(data['data']['characters'][i]['nid'], data['data']['characters'][i]['element'], data['data']['characters'][i]['weapon'], data['data']['characters'][i]['name_ru'], data['data']['characters'][i]['rarity']);
+    grid_container.appendChild(grid_element);
+}
+
+function char(data) {
+    while (true) {
+        const numbers = [];
+        for (i = data['data']['characters'].length - 1; i >= 0; i--) {
+            numbers.push(data['data']['characters'][i]['id'])
+        }
+        maxValue = Math.max.apply(null, numbers);
+        for (i = data['data']['characters'].length - 1; i >= 0; i--) {
+            while (maxValue >= -1) {
+                for (i = data['data']['characters'].length - 1; i >= 0; i--) {
+                    if (data['data']['characters'][i]['id'] == maxValue) {
+                        char_add(data, i)
+                        console.log(maxValue);
+                        maxValue = maxValue - 1;
+                    }
+                }
+            }
+        }
+        break;
     }
 }
 
@@ -57,16 +80,7 @@ function characters() {
     xhr.onload = function() {
         if (xhr.status === 200) {
             var data = xhr.response;
-            let l = 0;
-            while(l < data['data']['characters'].length) {
-                char('5', data, l)
-                l++;
-            }
-            let e = 0;
-            while(e < data['data']['characters'].length) {
-                char('4', data, e)
-                e++;
-            }
+            char(data)
         }
     };
     xhr.send();
