@@ -158,6 +158,81 @@ body {
 
 
 @media screen and (max-width: 320px) and (max-width: 460px) {
+    
+}
+
+.content {
+    padding-top: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(267px, 267px));
+    justify-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.grid-element {
+    width: 267px;
+}
+
+.card {
+    text-decoration: none;
+}
+
+.cr-name {
+    font-size: 20px;
+}
+
+.card-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 267px;
+    height: 128px;
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-bottom {
+    background-color: #2b3534;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 0 0 12px 12px;
+}
+
+.card-el {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: right;
+    margin: auto 4px auto 0px;
+    gap: 6px;
+}
+
+.cr-icon {
+    width: 128px;
+}
+
+.cr-element, .cr-weapon-type {
+    width: 40px;
+    background: rgba(56, 62, 68, 0.658);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.rarity {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    padding-bottom: 8px;
+}
+
+.star {
+    width: 24px;
+}
+
+@media screen and (max-width: 1023px) {
     .text-m {
         font-size: 12px;
         line-height: 45px;
@@ -174,5 +249,80 @@ body {
 
     .menu-item-cont {
         gap: 7px;
+    }
+
+
+    .text-m {
+        font-size: 12px;
+        line-height: 45px;
+    }
+
+    .icon-m {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-item-cont {
+        width: 165px;
+    }
+
+    .menu-item-cont {
+        gap: 7px;
+    }
+
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(109px, 109px));
+        justify-items: center;
+        gap: 10px;
+        padding-top: 15px;
+    }
+    
+    .grid-element {
+        width: 109px;
+    }
+
+    .card-cont {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 109px;
+        height: 52px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .card-bottom {
+        padding: unset;
+        border-radius: 0 0 6px 6px;
+    }
+
+    .cr-icon {
+        width: 52px;
+    }
+
+    .card-el {
+        gap: 3px;
+    }
+
+    .cr-element, .cr-weapon-type {
+        width: 16px;
+        padding: unset;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    .rarity {
+        margin-top: 2px;
+        padding-bottom: 4px;
+    }
+
+    .star {
+        width: 10px;
+    }
+
+    .cr-name {
+        font-size: 12px;
+        display: block;
     }
 }
