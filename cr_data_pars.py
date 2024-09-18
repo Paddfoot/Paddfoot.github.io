@@ -18,6 +18,8 @@ def par(n, e, r, w, el):
     constellation = bs.find_all('div', 'pi-data-value pi-font')
     region = bs.find_all('div', 'pi-data-value pi-font')
     group = bs.find_all('div', 'pi-data-value pi-font')
+    skill_1 = bs.find_all('table', 'wikitable talent_table')
+    constellations = bs.find_all('table', 'wikitable tdc1 tdc2')
     data = {e: {
                 'name': e,
                 'name_ru': name_ru.text,
@@ -28,8 +30,50 @@ def par(n, e, r, w, el):
                 'birthday': birthday[5].text,
                 'constellation': constellation[6].text,
                 'region': region[7].text,
-                'group': group[8].find('li').text[:-12],
+                'group': group[8].find('a').text,
                 'description': description.text,
+                'skills': [
+                    {
+                        'skill_name': skill_1[0].find_all('td')[1].text.rstrip(),
+                        'skill_desc': skill_1[0].find_all('td')[3].text.rstrip()
+                    },{
+                        'skill_name': skill_1[0].find_all('td')[5].text.rstrip(),
+                        'skill_desc': skill_1[0].find_all('td')[7].text.rstrip()
+                    },{
+                        'skill_name': skill_1[0].find_all('td')[9].text.rstrip(),
+                        'skill_desc': skill_1[0].find_all('td')[11].text.rstrip()
+                    },{
+                        'skill_name': skill_1[0].find_all('td')[13].text.rstrip(),
+                        'skill_desc': skill_1[0].find_all('td')[15].text.rstrip()
+                    },{
+                        'skill_name': skill_1[0].find_all('td')[17].text.rstrip(),
+                        'skill_desc': skill_1[0].find_all('td')[19].text.rstrip()
+                    },{
+                        'skill_name': skill_1[0].find_all('td')[21].text.rstrip(),
+                        'skill_desc': skill_1[0].find_all('td')[23].text.rstrip()
+                    }
+                ],
+                'constellations': [
+                    {
+                        'const_name': constellations[0].find_all('td')[2].text.rstrip(),
+                        'const_desc': constellations[0].find_all('td')[3].text.rstrip()
+                    },{
+                        'const_name': constellations[0].find_all('td')[6].text.rstrip(),
+                        'const_desc': constellations[0].find_all('td')[7].text.rstrip()
+                    },{
+                        'const_name': constellations[0].find_all('td')[10].text.rstrip(),
+                        'const_desc': constellations[0].find_all('td')[11].text.rstrip()
+                    },{
+                        'const_name': constellations[0].find_all('td')[14].text.rstrip(),
+                        'const_desc': constellations[0].find_all('td')[15].text.rstrip()
+                    },{
+                        'const_name': constellations[0].find_all('td')[18].text.rstrip(),
+                        'const_desc': constellations[0].find_all('td')[19].text.rstrip()
+                    },{
+                        'const_name': constellations[0].find_all('td')[22].text.rstrip(),
+                        'const_desc': constellations[0].find_all('td')[23].text.rstrip()
+                    }
+                ]
             }
         }
     print(data)
@@ -38,11 +82,11 @@ fileObj = codecs.open( "data/data.json", "r", "utf_8_sig" )
 text = fileObj.read()
 jess_dict = json.loads(text)
 
-par(jess_dict['data']['characters'][1]['name_ru'],
-    jess_dict['data']['characters'][1]['name'],
-    jess_dict['data']['characters'][1]['rarity'],
-    jess_dict['data']['characters'][1]['weapon'],
-    jess_dict['data']['characters'][1]['element'])
+par(jess_dict['data']['characters'][3]['name_ru'],
+    jess_dict['data']['characters'][3]['name'],
+    jess_dict['data']['characters'][3]['rarity'],
+    jess_dict['data']['characters'][3]['weapon'],
+    jess_dict['data']['characters'][3]['element'])
 
 #for i in jess_dict['data']['characters']:
 #    print(i['name_ru'])

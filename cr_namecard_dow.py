@@ -8,7 +8,7 @@ def resize_(d, s):
     image_path = 'data/characters/' + d + '/' + d + '_namecard.' + s
     img = Image.open(image_path)
     new_image = img.resize((267, 128))
-    new_image.save('data/characters/' + d + '/' + d + '_namecard_pv.jpeg', "JPEG", quality=50, optimize=True, progressive=True)
+    new_image.save('data/characters/' + d + '/' + d + '_namecard_pv.jpeg', "JPEG", quality=100, optimize=True, progressive=True)
 
 def dow(d):
     if d == 'Momoka':
