@@ -1,9 +1,9 @@
 document.querySelector('#menu-btn').addEventListener('click', () => {
     document.querySelector('.menu').classList.toggle('open');
     document.querySelector('#menu-btn').classList.toggle('clicked');
-});
-
-document.addEventListener('scroll', function() {
+  });
+  
+  document.addEventListener('scroll', function() {
     const gachaImage = document.querySelector('.gacha-img');
     const lPage = document.querySelector('.l-page');
     const gachaImageRect = gachaImage.getBoundingClientRect();
@@ -24,44 +24,47 @@ document.addEventListener('scroll', function() {
       // Если изображение полностью видимо, сбрасываем clip-path
       gachaImage.style.clipPath = 'inset(0 0 0 0)';
     }
-});
-
-const currentUrl = window.location.href;
-
-// Создаем объект URL
-const url = new URL(currentUrl);
-
-// Получаем путь из URL
-const path = url.pathname;
-
-// Разделяем путь на части
-const pathSegments = path.split('/');
-
-// Извлекаем нужный сегмент (в данном случае предположим, что он перед 'index.html')
-const targetSegment = pathSegments[pathSegments.length - 2];
-
-console.log(targetSegment); // Вывод: Mualani
-
-// URL вашего JSON-файла
-const jsonUrl = `https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/refs/heads/main/characters/${targetSegment}/${targetSegment}.json`; // Замените на свой URL
-
-function rarity(star) {
-  var stars = '';
-  for (i = star; i > 0; i--) {
-      stars += '<img class="star" src="../../data/res/star.webp">'
-  }
-  return stars;
-};
-
-function displayInfo(data) {
+  });
+  
+  const currentUrl = window.location.href;
+  
+  // Создаем объект URL
+  const url = new URL(currentUrl);
+  
+  // Получаем путь из URL
+  const path = url.pathname;
+  
+  // Разделяем путь на части
+  const pathSegments = path.split('/');
+  
+  // Извлекаем нужный сегмент (в данном случае предположим, что он перед 'index.html')
+  const targetSegment = pathSegments[pathSegments.length - 2];
+  
+  console.log(targetSegment); // Вывод: Mualani
+  
+  // URL вашего JSON-файла
+  const jsonUrl = `https://raw.githubusercontent.com/Paddfoot/Paddfoot.github.io/refs/heads/main/characters/${targetSegment}/${targetSegment}.json`; // Замените на свой URL
+  
+  function rarity(star) {
+    var stars = '';
+    for (i = star; i > 0; i--) {
+        stars += '<img class="star" src="../../data/res/star.webp">'
+    }
+    return stars;
+  };
+  
+  function displayInfo(data) {
   document.querySelector('.cr-name-v').textContent = data[targetSegment]['name_ru'];
   const container =  document.querySelector('.rarity');
   container.innerHTML = rarity(data[targetSegment]['rarity']);
   document.querySelector('.cr-briefly').textContent = data[targetSegment]['briefly'];
-};
-
-// Функция для загрузки и отображения данных из JSON-файла
-async function loadJSON() {
+  document.querySelector('.gacha-img').src = `../../data/characters/${targetSegment}/${targetSegment}_gacha.webp`
+  document.querySelector('.vid').src = `../../data/res/${data[targetSegment]['element'].toLowerCase()}_bg.webm`
+  document.querySelector('.v-bg').load();
+  };
+  
+  // Функция для загрузки и отображения данных из JSON-файла
+  async function loadJSON() {
     try {
         const response = await fetch(jsonUrl); // Загрузка JSON-файла по ссылке
         if (!response.ok) {
@@ -72,6 +75,6 @@ async function loadJSON() {
     } catch (error) {
         console.error('Error fetching JSON:', error);
     }
-}
-
-loadJSON();
+  }
+  
+  loadJSON();
