@@ -3,54 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Details</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Element Translation</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Genshin Impact</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Characters</a></li>
-                    <li><a href="#">Weapons</a></li>
-                    <li><a href="#">Artifacts</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="character-profile">
-            <div class="character-info">
-                <img src="kaeya-image.jpg" alt="Kaeya" class="character-image">
-                <h1>Kaeya</h1>
-                <p><strong>Element:</strong> Cryo</p>
-                <p><strong>Weapon:</strong> Sword</p>
-                <p><strong>Rarity:</strong> 4 Star</p>
-                <p class="description">Kaeya is a character known for his Cryo abilities and swift swordplay...</p>
-            </div>
-            <div class="character-details">
-                <div class="tabs">
-                    <button class="tab-button active" onclick="openTab('skills')">Skills</button>
-                    <button class="tab-button" onclick="openTab('weapon')">Weapon</button>
-                    <button class="tab-button" onclick="openTab('artifacts')">Artifacts</button>
-                </div>
-                <div id="skills" class="tab-content">
-                    <h2>Skills</h2>
-                    <p>Details about Kaeya's skills...</p>
-                </div>
-                <div id="weapon" class="tab-content" style="display:none;">
-                    <h2>Weapon</h2>
-                    <p>Details about Kaeya's weapon...</p>
-                </div>
-                <div id="artifacts" class="tab-content" style="display:none;">
-                    <h2>Artifacts</h2>
-                    <p>Details about Kaeya's artifacts...</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Genshin Impact. All rights reserved.</p>
-    </footer>
+    <h3>Введите стихию (Pyro, Hydro, Dendro, Anemo, Geo, Cryo, Electro):</h3>
+    <input type="text" id="elementInput" placeholder="Введите стихию...">
+    <button onclick="translateElement()">Перевести</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Объект для соответствия английских и русских названий стихий
+        const elementTranslations = {
+            'Pyro': 'Пиро',
+            'Hydro': 'Гидро',
+            'Dendro': 'Дендро',
+            'Anemo': 'Анемо',
+            'Geo': 'Гео',
+            'Cryo': 'Крио',
+            'Electro': 'Электро'
+        };
+
+        // Функция для перевода стихий
+        function translateElement() {
+            // Получаем значение введённое пользователем
+            const inputElement = document.getElementById('elementInput').value;
+
+            // Ищем перевод в объекте elementTranslations
+            const translation = elementTranslations[inputElement];
+
+            // Если перевод найден, выводим его, иначе показываем сообщение об ошибке
+            if (translation) {
+                document.getElementById('result').textContent = `Перевод: ${translation}`;
+            } else {
+                document.getElementById('result').textContent = 'Стихия не найдена. Попробуйте снова.';
+            }
+        }
+    </script>
+</body>
+</html>

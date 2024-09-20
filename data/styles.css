@@ -249,6 +249,7 @@ a, span, th, td {
 
 .gen-text {
     font-family: Gensh, Arial;
+    white-space: pre-line;
 }
 
 .gacha-img-c {
