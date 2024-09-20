@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genshin Impact Characters</title>
+    <title>Character Details</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Genshin Impact Characters</h1>
+        <div class="navbar">
+            <div class="logo">Genshin Impact</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Weapons</a></li>
+                    <li><a href="#">Artifacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="filter">
-            <label for="elementFilter">Filter by Element:</label>
-            <select id="elementFilter">
-                <option value="">All</option>
-                <option value="Anemo">Anemo</option>
-                <option value="Geo">Geo</option>
-                <option value="Electro">Electro</option>
-                <option value="Dendro">Dendro</option>
-                <option value="Hydro">Hydro</option>
-                <option value="Pyro">Pyro</option>
-                <option value="Cryo">Cryo</option>
-            </select>
-            
-            <label for="weaponFilter">Filter by Weapon:</label>
-            <select id="weaponFilter">
-                <option value="">All</option>
-                <option value="Sword">Sword</option>
-                <option value="Claymore">Claymore</option>
-                <option value="Polearm">Polearm</option>
-                <option value="Bow">Bow</option>
-                <option value="Catalyst">Catalyst</option>
-            </select>
-            
-            <label for="rarityFilter">Filter by Rarity:</label>
-            <select id="rarityFilter">
-                <option value="">All</option>
-                <option value="4">4 Stars</option>
-                <option value="5">5 Stars</option>
-            </select>
-        </section>
-        <section class="character-grid" id="characterGrid">
-            <!-- Character items will be injected here by JavaScript -->
+        <section class="character-profile">
+            <div class="character-info">
+                <img src="kaeya-image.jpg" alt="Kaeya" class="character-image">
+                <h1>Kaeya</h1>
+                <p><strong>Element:</strong> Cryo</p>
+                <p><strong>Weapon:</strong> Sword</p>
+                <p><strong>Rarity:</strong> 4 Star</p>
+                <p class="description">Kaeya is a character known for his Cryo abilities and swift swordplay...</p>
+            </div>
+            <div class="character-details">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab('skills')">Skills</button>
+                    <button class="tab-button" onclick="openTab('weapon')">Weapon</button>
+                    <button class="tab-button" onclick="openTab('artifacts')">Artifacts</button>
+                </div>
+                <div id="skills" class="tab-content">
+                    <h2>Skills</h2>
+                    <p>Details about Kaeya's skills...</p>
+                </div>
+                <div id="weapon" class="tab-content" style="display:none;">
+                    <h2>Weapon</h2>
+                    <p>Details about Kaeya's weapon...</p>
+                </div>
+                <div id="artifacts" class="tab-content" style="display:none;">
+                    <h2>Artifacts</h2>
+                    <p>Details about Kaeya's artifacts...</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Genshin Impact Fan Page</p>
+        <p>&copy; 2024 Genshin Impact. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
-</body>
-</html>

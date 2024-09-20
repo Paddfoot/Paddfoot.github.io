@@ -8,7 +8,7 @@ import codecs
 def par(n, e, r, w, el):
     #temp = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     #print(temp.text)
-    url = 'https://genshin-impact.fandom.com/ru/wiki/Муалани'# + n
+    url = 'https://genshin-impact.fandom.com/ru/wiki/Эмилия'# + n
     response = requests.get(url)
     bs = BeautifulSoup(response.text,"lxml")
     name_ru = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
