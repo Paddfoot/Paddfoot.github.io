@@ -90,3 +90,41 @@ if (document.querySelector('.grid-container') == null){
 }else{
     characters();
 }
+
+
+//document.addEventListener('scroll', function() {
+//    const image = document.querySelector('.gacha-img');
+//    const imageTop = image.getBoundingClientRect().top;
+//    const windowHeight = window.innerHeight;
+//  
+//    // Рассчитываем, насколько изображение должно исчезнуть в зависимости от положения на экране
+//    if (imageTop < windowHeight && imageTop > 0) {
+//      const hiddenHeight = (windowHeight - imageTop) / windowHeight;
+//      image.style.clipPath = `inset(0 0 ${hiddenHeight * 80}px 0)`;
+//    } else if (imageTop <= 0) {
+//      image.style.clipPath = 'inset(0 0 364px 0)'; // Полностью скрытое изображение
+//    }
+//  });
+
+document.addEventListener('scroll', function() {
+    const gachaImage = document.querySelector('.gacha-img');
+    const lPage = document.querySelector('.l-page');
+    const gachaImageRect = gachaImage.getBoundingClientRect();
+    const lPageRect = lPage.getBoundingClientRect();
+    
+    // Определяем, когда изображение начинает пересекаться с .l-page
+    if (gachaImageRect.top < lPageRect.bottom) {
+      // Вычисляем, насколько изображение пересекается с .l-page
+      const overlap = Math.min(gachaImageRect.bottom - lPageRect.top, gachaImageRect.height);
+      const percentage = (overlap / gachaImageRect.height) * 100;
+  
+      // Применяем clip-path, чтобы скрыть часть изображения
+      gachaImage.style.clipPath = `inset(0 0 ${percentage}% 0)`;
+    } else if (gachaImageRect.bottom <= lPageRect.top) {
+      // Если изображение полностью за элементом .l-page, скрываем его полностью
+      //gachaImage.style.clipPath = 'inset(0 0 100% 0)';
+    } else {
+      // Если изображение полностью видимо, сбрасываем clip-path
+      gachaImage.style.clipPath = 'inset(0 0 0 0)';
+    }
+  });

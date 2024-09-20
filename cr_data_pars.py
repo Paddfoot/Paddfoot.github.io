@@ -8,7 +8,7 @@ import codecs
 def par(n, e, r, w, el):
     #temp = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     #print(temp.text)
-    url = 'https://genshin-impact.fandom.com/ru/wiki/' + n
+    url = 'https://genshin-impact.fandom.com/ru/wiki/Муалани'# + n
     response = requests.get(url)
     bs = BeautifulSoup(response.text,"lxml")
     name_ru = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
@@ -30,7 +30,7 @@ def par(n, e, r, w, el):
                 'birthday': birthday[5].text,
                 'constellation': constellation[6].text,
                 'region': region[7].text,
-                'group': group[8].find('a').text,
+                'group': group[0].text,
                 'description': description.text,
                 'skills': [
                     {

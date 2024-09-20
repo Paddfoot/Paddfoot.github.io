@@ -56,7 +56,7 @@
     src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
-a, span {
+a, span, th, td {
     color: #c1c1c1;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -157,7 +157,6 @@ body {
 
 
 
-
 /*@media screen and (max-width: 320px) and (max-width: 460px) {*/
 /*    */
 /*}*/
@@ -166,6 +165,14 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     height: 100%;
+}
+
+.content-l {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 html {
@@ -248,6 +255,121 @@ html {
     object-fit: cover;
     position: fixed;
     z-index: -1;
+    top: 0;
+}
+
+.l-top {
+    width: 1200px;
+    height: 360px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+
+
+.tabs { width: 100%; padding: 0px; margin: 0 auto; }
+.tabs>input { display: none; }
+.tabs>div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    background: #FFFFFF;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #C0C0C0;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+.tabs>input:checked + label {
+    color: #000000;
+    border: 1px solid #C0C0C0;
+    border-bottom: 1px solid #FFFFFF;
+    background: #FFFFFF;
+}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4,
+#tab_5:checked ~ #txt_5,
+#tab_6:checked ~ #txt_6,
+#tab_7:checked ~ #txt_7 { display: block; }
+
+
+
+@font-face {
+    font-family: Gensh;
+    src: url(genshin-impact.woff2) format("woff2"),
+      url(genshin-impact.woff) format("woff"),
+      url(genshin-impact.ttf) format("truetype");
+}
+  
+@font-face {
+    font-family: "Genshin Impact";
+    src: url(genshin-impact.woff2) format("woff2"),
+      url(genshin-impact.woff) format("woff"),
+      url(genshin-impact.ttf) format("truetype");
+}
+
+.cr-name-v {
+    font-family: Gensh, Arial;
+    font-size:42px;
+}
+
+.gen-text {
+    font-family: Gensh, Arial;
+}
+
+.gacha-img-c {
+    text-align: end;
+    position: fixed;
+    width: 1200px;
+}
+
+.gacha-img {
+    width: 720px;
+    object-position: 100px;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0 0 0 0); /* Изначально изображение полностью отображается */
+    /*transition: clip-path 0.5s ease-out;   Анимация плавного исчезновения */
+}
+
+.l-page-top {
+    align-content: end;
+    padding-bottom: 25px;
+}
+
+.cr-briefly {
+    width: 400px;
+    display: block;
+}
+
+.cr-in {
+    padding: 6px;
+    background: #1f1f1f90;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+.l-page {
+    width: 1200px;
+    position: absolute;
+    background: #1f1f1f90;
+    top: 400px;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+}
+
+.disc {
+    display: block;
+    width: 550px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -342,5 +464,9 @@ html {
     .cr-name {
         font-size: 12px;
         display: block;
+    }
+
+    .v-bg {
+        width: 380px;
     }
 }
