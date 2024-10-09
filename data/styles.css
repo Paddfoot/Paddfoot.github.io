@@ -343,4 +343,7 @@ a, span, th, td {
         order: 0;
         justify-self: center !important;
     }
+    .cr-briefly {
+        width: 380px;
+    }
 }
