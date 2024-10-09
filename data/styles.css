@@ -302,6 +302,7 @@ a, span, th, td {
     .l-top {
         width: 380px;
         grid-template-columns: auto;
+        background: #0000006b;
     }
 
     .gacha-img {
@@ -345,5 +346,20 @@ a, span, th, td {
     }
     .cr-briefly {
         width: 380px;
+        text-align: center;
     }
+    .rarity {
+        text-align: center;
+      }
+    
+      .cr-name-v {
+        font-family: Gensh, Arial;
+        font-size: 42px;
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+      .kijn {
+        justify-content: center !important;
+      }
 }
