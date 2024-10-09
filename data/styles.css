@@ -313,7 +313,13 @@ a, span, th, td {
         position: fixed;
         width: 380px;
         z-index: -1;
+        overflow: hidden;
     }
+    .l-page-top {
+        align-content: end;
+        padding-bottom: 25px;
+        width: 380px;
+      }
     
     .l-page {
         width: 380px;
