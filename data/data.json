@@ -1068,6 +1068,18 @@
           "icon": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Zhongli/UI_AvatarIcon_Zhongli.png",
           "gacha_img": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Zhongli/UI_Gacha_AvatarImg_Zhongli.webp",
           "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Zhongli/UI_NameCardPic_Zhongli_P_min.jpeg"
+        },
+        {
+          "id": "88",
+          "nid": "Xilonen",
+          "name": "Xilonen",
+          "name_ru": "Шилонен",
+          "element": "Geo",
+          "weapon": "Sword",
+          "rarity": "5",
+          "icon": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kinich/UI_AvatarIcon_Kinich.png",
+          "gacha_img": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kinich/UI_Gacha_AvatarImg_Kinich.webp",
+          "namecard": "https://raw.githubusercontent.com/Paddfoot/Awarin/main/data/characters/Kinich/UI_NameCardPic_Kinich_P_min.jpeg"
         }
       ]
     }

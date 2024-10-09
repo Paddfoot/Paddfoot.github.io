@@ -299,5 +299,42 @@ a, span, th, td {
 }
 
 @media screen and (max-width: 1023px) {
+    .l-top {
+        width: 380px;
+        grid-template-columns: auto;
+    }
 
+    .gacha-img {
+        object-position: -160px;
+    }
+
+    .gacha-img-c {
+        text-align: end;
+        position: fixed;
+        width: 380px;
+        z-index: -1;
+    }
+    
+    .l-page {
+        width: 380px;
+        padding: unset;
+        border-radius: 0;
+    }
+
+    .disc {
+      width: 370px;
+    }
+
+
+    .ljft {
+        grid-template-columns: auto !important;
+    }
+
+    .fff {
+        order: 1;
+    }
+    .ggg {
+        order: 0;
+        justify-self: center !important;
+    }
 }
