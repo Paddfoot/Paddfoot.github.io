@@ -83,12 +83,13 @@ document.querySelector('.element').textContent = elementTranslations[data[target
 document.querySelector('.weapon').textContent = weaponTranslations[data[targetSegment]['weapon']];
 document.querySelector('.disc').textContent = data[targetSegment]['description'];
 
-async function tabs(tn, lo, lt, ele) {
+async function tabs(tn, lo, lt, ele, elel) {
   const tab = document.getElementById('txt_' + tn);
   tab.innerHTML = '';
-  const tab_el = document.createElement('table');
+  const tab_el = document.createElement('div');
   tab_el.className = 'table-element';
   tab_el.innerHTML = `
+  <table>
   <tr>
       <td>Уровень</td>
       <td>Здоровье</td>
@@ -110,28 +111,96 @@ async function tabs(tn, lo, lt, ele) {
       <td>${data[targetSegment]['elevation'][ele][lt]['def']}</td>
       <td class="par">${data[targetSegment]['elevation'][ele][lt]['sub']['par']}</td>
   </tr>
-  <span>Материалы возвышения</span>
-                            <div>
-                                <div style="width: 64px; text-align: center;">
-                                    <div style="display: grid; grid-template-columns: auto; justify-items: center;">
-                                        <img src="../../data/res/mora.webp" style="width: 64px; object-fit: scale-down; background: #6e9dbf;">
-                                        <span>${data[targetSegment]['mat']['0-1']['0']['len']}</span>
-                                    </div>
-                                    <span>Мора</span>
-                                </div>
-                            </div>
+  </table>
+    <div>${ff(elel)}</div>
   `
   tab.appendChild(tab_el);
 };
+
+function ff(elel){
+  if (elel == '0-0') {
+    return ''
+  }if (elel == '0-1') {
+    return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex;">
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][0]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][0]['name']}</span>
+    </div>
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][1]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][1]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][1]['name']}</span>
+    </div>
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][2]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][2]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][2]['name']}</span>
+    </div>
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][3]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][3]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][3]['name']}</span>
+    </div>
+</div>`
+  }else{
+    return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex;">
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][0]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][0]['name']}</span>
+    </div>
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][1]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][1]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][1]['name']}</span>
+    </div>
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][2]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][2]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][2]['name']}</span>
+    </div>
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][3]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][3]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][3]['name']}</span>
+    </div>
+    <div style="text-align: center; width: 100px;">
+        <div style="display: grid; grid-template-columns: auto; justify-items: center;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][4]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <span>${data[targetSegment]['mat'][elel][4]['len']}</span>
+        </div>
+        <span>${data[targetSegment]['mat'][elel][4]['name']}</span>
+    </div>
+</div>`
+  }
+}
+
 // Массив с параметрами для функции tabs
 const tabsParams = [
-  [1, '0', '20', 0],
-  [2, '20+', '40', 1],
-  [3, '40+', '50', 2],
-  [4, '50+', '60', 3],
-  [5, '60+', '70', 4],
-  [6, '70+', '80', 5],
-  [7, '80+', '90', 6]
+  [1, '0', '20', 0, '0-0'],
+  [2, '20+', '40', 1, '0-1'],
+  [3, '40+', '50', 2, '1-2'],
+  [4, '50+', '60', 3, '2-3'],
+  [5, '60+', '70', 4, '3-4'],
+  [6, '70+', '80', 5, '4-5'],
+  [7, '80+', '90', 6, '5-6']
 ];
 
 // Цикл для вызова функции tabs с параметрами

@@ -220,7 +220,7 @@ a, span, th, td {
 }
 .tabs>label {
     display: inline-block;
-    padding: 7px;
+    padding: 15px 20px;
     margin: 0 -5px -1px 0;
     text-align: center;
     color: #666666;
@@ -240,7 +240,11 @@ a, span, th, td {
 #tab_4:checked ~ #txt_4,
 #tab_5:checked ~ #txt_5,
 #tab_6:checked ~ #txt_6,
-#tab_7:checked ~ #txt_7 { display: block; }
+#tab_7:checked ~ #txt_7 {
+    display: block;
+    background: unset;
+    border: none;
+}
 
 .cr-name-v {
     font-family: Gensh, Arial;
