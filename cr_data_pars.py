@@ -214,6 +214,8 @@ def par(n, e, r, w, el):
             }
         }
     print(data)
+    with open('characters/' + jess_dict['data']['characters'][52]['name'] + '/' + jess_dict['data']['characters'][52]['name'] + '.json', 'w') as file:
+        json.dump(data, file)
 
 fileObj = codecs.open( "data/data.json", "r", "utf_8_sig" )
 text = fileObj.read()
