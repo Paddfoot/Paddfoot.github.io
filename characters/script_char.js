@@ -124,7 +124,7 @@ function ff(elel){
     return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex;">
     <div style="text-align: center; width: 100px;">
         <div style="display: grid; grid-template-columns: auto; justify-items: center;">
-            <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.png" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
             <span>${data[targetSegment]['mat'][elel][0]['len']}</span>
         </div>
         <span>${data[targetSegment]['mat'][elel][0]['name']}</span>
@@ -155,7 +155,7 @@ function ff(elel){
     return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex;">
     <div style="text-align: center; width: 100px;">
         <div style="display: grid; grid-template-columns: auto; justify-items: center;">
-            <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.png" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
+            <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
             <span>${data[targetSegment]['mat'][elel][0]['len']}</span>
         </div>
         <span>${data[targetSegment]['mat'][elel][0]['name']}</span>
