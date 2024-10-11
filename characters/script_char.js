@@ -83,35 +83,37 @@ document.querySelector('.element').textContent = elementTranslations[data[target
 document.querySelector('.weapon').textContent = weaponTranslations[data[targetSegment]['weapon']];
 document.querySelector('.disc').textContent = data[targetSegment]['description'];
 
-console.log(data[targetSegment]['elevation'])
-const tab1 = document.getElementById('txt_1');
-tab1.innerHTML = '';
-const tab_el = document.createElement('table');
-tab_el.className = 'table-element';
-tab_el.innerHTML = `
-                                <tr>
-                                    <td>Уровень</td>
-                                    <td>Здоровье</td>
-                                    <td>Атака</td>
-                                    <td>Защита</td>
-                                    <td class="attr">ШК</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>${data[targetSegment]['elevation']}</td>
-                                    <td>14</td>
-                                    <td>44</td>
-                                    <td class="par">---</td>
-                                </tr>
-                                <tr>
-                                    <td>20</td>
-                                    <td>3066</td>
-                                    <td>36</td>
-                                    <td>115</td>
-                                    <td class="par">---</td>
-                                  </tr>
-`
-tab1.appendChild(tab_el);
+async function tabs(tn, lo, lt, ele) {
+  const tab = document.getElementById('txt_' + tn);
+  tab.innerHTML = '';
+  const tab_el = document.createElement('table');
+  tab_el.className = 'table-element';
+  tab_el.innerHTML = `
+  <tr>
+      <td>Уровень</td>
+      <td>Здоровье</td>
+      <td>Атака</td>
+      <td>Защита</td>
+      <td class="attr">${data[targetSegment]['elevation'][ele][lo]['sub']['attr']}</td>
+  </tr>
+  <tr>
+      <td>1</td>
+      <td>${data[targetSegment]['elevation'][ele][lo]['hp']}</td>
+      <td>${data[targetSegment]['elevation'][ele][lo]['atc']}</td>
+      <td>${data[targetSegment]['elevation'][ele][lo]['def']}</td>
+      <td class="par">${data[targetSegment]['elevation'][ele][lo]['sub']['par']}</td>
+  </tr>
+  <tr>
+      <td>20</td>
+      <td>${data[targetSegment]['elevation'][ele][lt]['hp']}</td>
+      <td>${data[targetSegment]['elevation'][ele][lt]['atc']}</td>
+      <td>${data[targetSegment]['elevation'][ele][lt]['def']}</td>
+      <td class="par">${data[targetSegment]['elevation'][ele][lt]['sub']['par']}</td>
+  </tr>
+  `
+  tab.appendChild(tab_el);
+};
+tabs();
 };
 
 // Функция для загрузки и отображения данных из JSON-файла
