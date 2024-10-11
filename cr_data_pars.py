@@ -9,8 +9,11 @@ def par(n, e, r, w, el):
     #temp = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     #print(temp.text)
     url = 'https://genshin-impact.fandom.com/ru/wiki/' + n
+    url2 = 'https://genshin-impact.fandom.com/en/wiki/' + e
     response = requests.get(url)
+    response2 = requests.get(url2)
     bs = BeautifulSoup(response.text,"lxml")
+    bs2 = BeautifulSoup(response2.text,"lxml")
     name_ru = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     briefly = bs.find('div', 'pi-data-value pi-font')
     description = bs.find('div', 'description__text')
@@ -21,6 +24,7 @@ def par(n, e, r, w, el):
     skill_1 = bs.find_all('table', 'wikitable talent_table')
     constellations = bs.find_all('table', 'wikitable tdc1 tdc2')
     ele = bs.find_all('table', 'wikitable')
+    mat = bs2.find_all('table', 'wikitable ascension-stats')
     data = {e: {
                 'name': e,
                 'name_ru': name_ru.text,
@@ -210,9 +214,27 @@ def par(n, e, r, w, el):
                             }
                         }
                     }
-                ]
+                ],
+                'mat': {
+
+                }
             }
         }
+    
+    ascension_table = mat[0]
+    ascension_rows = ascension_table.find_all('tr', id='mw-customcollapsible-toggle-ascension')
+    ascension_stages = ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6']
+    stage_idx = 0
+    for row in ascension_rows:
+        items = row.find_all('span', class_='card-text card-font')
+        if items:
+            ascension_data = {}
+            for idx, item in enumerate(items):
+                name = item.find_previous('a')['title']
+                qty = item.text.strip()
+                ascension_data[idx] = {'name': name, 'len': qty}
+            data[e]['mat'][ascension_stages[stage_idx]] = ascension_data
+            stage_idx += 1
     print(data)
     with open('characters/' + jess_dict['data']['characters'][52]['name'] + '/' + jess_dict['data']['characters'][52]['name'] + '.json', 'w', encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False)
