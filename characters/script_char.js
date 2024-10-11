@@ -82,6 +82,36 @@ document.querySelector('.v-bg').load();
 document.querySelector('.element').textContent = elementTranslations[data[targetSegment]['element']];
 document.querySelector('.weapon').textContent = weaponTranslations[data[targetSegment]['weapon']];
 document.querySelector('.disc').textContent = data[targetSegment]['description'];
+
+console.log(data[targetSegment]['elevation'])
+const tab1 = document.getElementById('txt_1');
+tab1.innerHTML = '';
+const tab_el = document.createElement('table');
+tab_el.className = 'table-element';
+tab_el.innerHTML = `
+                                <tr>
+                                    <td>Уровень</td>
+                                    <td>Здоровье</td>
+                                    <td>Атака</td>
+                                    <td>Защита</td>
+                                    <td class="attr">ШК</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>${data[targetSegment]['elevation']}</td>
+                                    <td>14</td>
+                                    <td>44</td>
+                                    <td class="par">---</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>3066</td>
+                                    <td>36</td>
+                                    <td>115</td>
+                                    <td class="par">---</td>
+                                  </tr>
+`
+tab1.appendChild(tab_el);
 };
 
 // Функция для загрузки и отображения данных из JSON-файла
