@@ -1,44 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element Translation</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Муалани - Персонаж</title>
 </head>
 <body>
-    <h3>Введите стихию (Pyro, Hydro, Dendro, Anemo, Geo, Cryo, Electro):</h3>
-    <input type="text" id="elementInput" placeholder="Введите стихию...">
-    <button onclick="translateElement()">Перевести</button>
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'brief')">Кратко</button>
+        <button class="tab-button" onclick="openTab(event, 'skills')">Навыки</button>
+        <button class="tab-button" onclick="openTab(event, 'constellations')">Созвездия</button>
+        <button class="tab-button" onclick="openTab(event, 'elevation')">Повышение</button>
+        <button class="tab-button" onclick="openTab(event, 'materials')">Материалы</button>
+    </div>
 
-    <p id="result"></p>
+    <div class="tab-content active" id="brief">
+        <h2>Кратко</h2>
+        <p>Муалани - знаменитый гид из Натлана, владелица магазина товаров для водного спорта, эксперт по всем видам укрощения волн.</p>
+        <p><strong>Элемент:</strong> Гидро</p>
+        <p><strong>Оружие:</strong> Катализатор</p>
+        <p><strong>Редкость:</strong> 5</p>
+        <p><strong>День рождения:</strong> 3 августа</p>
+        <p><strong>Созвездие:</strong> Тюлень</p>
+    </div>
 
-    <script>
-        // Объект для соответствия английских и русских названий стихий
-        const elementTranslations = {
-            'Pyro': 'Пиро',
-            'Hydro': 'Гидро',
-            'Dendro': 'Дендро',
-            'Anemo': 'Анемо',
-            'Geo': 'Гео',
-            'Cryo': 'Крио',
-            'Electro': 'Электро'
-        };
+    <div class="tab-content" id="skills">
+        <h2>Навыки</h2>
+        <ul>
+            <li><strong>Охлаждающая процедура:</strong> Обычная атака... (описание навыка)</li>
+            <li><strong>Волнорезная сёрф-акула:</strong> Благодаря знаниям... (описание навыка)</li>
+            <li><strong>Зубастый бабах:</strong> Выпускает самонаводящуюся... (описание навыка)</li>
+            <li><strong>Жаростойкий пресноводный иглобрюх:</strong> Разрывающий укус акулки... (описание навыка)</li>
+            <li><strong>Лучший проводник Натлана:</strong> После того как член... (описание навыка)</li>
+            <li><strong>Главное улыбаться!</strong> В областях с флогистоновыми... (описание навыка)</li>
+        </ul>
+    </div>
 
-        // Функция для перевода стихий
-        function translateElement() {
-            // Получаем значение введённое пользователем
-            const inputElement = document.getElementById('elementInput').value;
+    <div class="tab-content" id="constellations">
+        <h2>Созвездия</h2>
+        <ul>
+            <li><strong>Беззаботные «Мецтли»...</strong> Урон первого Разрывающего укуса... (описание)</li>
+            <li><strong>Муалани сделает всё возможное!</strong> Войдя в состояние... (описание)</li>
+            <li><strong>По волнам весёлого моря:</strong> Увеличивает уровень навыка... (описание)</li>
+            <li><strong>Акулка поедает иглобрюшков:</strong> Когда Муалани подбирает... (описание)</li>
+            <li><strong>Продаётся такая же доска для сёрфинга!</strong> Увеличивает уровень навыка... (описание)</li>
+            <li><strong>Дух Народа Родников:</strong> Эффект увеличения урона... (описание)</li>
+        </ul>
+    </div>
 
-            // Ищем перевод в объекте elementTranslations
-            const translation = elementTranslations[inputElement];
+    <div class="tab-content" id="elevation">
+        <h2>Повышение</h2>
+        <table>
+            <tr>
+                <th>Уровень</th>
+                <th>HP</th>
+                <th>АТК</th>
+                <th>Защита</th>
+                <th>Доп. атрибут</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1 182</td>
+                <td>14</td>
+                <td>44</td>
+                <td>Шанс крит. попадания —</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>3 066</td>
+                <td>36</td>
+                <td>115</td>
+                <td>Шанс крит. попадания —</td>
+            </tr>
+            <!-- Добавьте другие уровни по аналогии -->
+        </table>
+    </div>
 
-            // Если перевод найден, выводим его, иначе показываем сообщение об ошибке
-            if (translation) {
-                document.getElementById('result').textContent = `Перевод: ${translation}`;
-            } else {
-                document.getElementById('result').textContent = 'Стихия не найдена. Попробуйте снова.';
-            }
-        }
-    </script>
+    <div class="tab-content" id="materials">
+        <h2>Материалы</h2>
+        <table>
+            <tr>
+                <th>Уровень</th>
+                <th>Материал</th>
+                <th>Количество</th>
+            </tr>
+            <tr>
+                <td>0-1</td>
+                <td>Mora</td>
+                <td>20,000</td>
+            </tr>
+            <tr>
+                <td>0-1</td>
+                <td>Varunada Lazurite Sliver</td>
+                <td>1</td>
+            </tr>
+            <!-- Добавьте другие материалы по аналогии -->
+        </table>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

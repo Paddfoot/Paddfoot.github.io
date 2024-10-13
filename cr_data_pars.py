@@ -5,7 +5,7 @@ import requests
 import json
 import codecs
 
-def par(n, e, r, w, el):
+def par(n, e, r, w, el, i):
     #temp = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     #print(temp.text)
     url = 'https://genshin-impact.fandom.com/ru/wiki/' + n
@@ -17,10 +17,10 @@ def par(n, e, r, w, el):
     name_ru = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     briefly = bs.find('div', 'pi-data-value pi-font')
     description = bs.find('div', 'description__text')
-    birthday = bs.find_all('div', 'pi-data-value pi-font')
+    #birthday = bs.find_all('div', 'pi-data-value pi-font')
     constellation = bs.find_all('div', 'pi-data-value pi-font')
     region = bs.find_all('div', 'pi-data-value pi-font')
-    group = bs.find_all('div', 'pi-data-value pi-font')
+    #group = bs.find_all('div', 'pi-data-value pi-font')
     skill_1 = bs.find_all('table', 'wikitable talent_table')
     constellations = bs.find_all('table', 'wikitable tdc1 tdc2')
     ele = bs.find_all('table', 'wikitable')
@@ -32,10 +32,10 @@ def par(n, e, r, w, el):
                 'weapon': w,
                 'rarity': r,
                 'briefly': briefly.text,
-                'birthday': birthday[5].text,
+                #'birthday': birthday[5].text,
                 'constellation': constellation[6].text,
                 'region': region[7].text,
-                'group': group[0].text,
+                #'group': group[0].text,
                 'description': description.text,
                 'skills': [
                     {
@@ -233,19 +233,24 @@ def par(n, e, r, w, el):
                 ascension_data[idx] = {'name': name, 'len': qty}
             data[e]['mat'][ascension_stages[stage_idx]] = ascension_data
             stage_idx += 1
-    print(data)
-    with open('characters/' + jess_dict['data']['characters'][52]['name'] + '/' + jess_dict['data']['characters'][52]['name'] + '.json', 'w', encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False)
+    #print(data)
+    os.makedirs('characters/' + jess_dict['data']['characters'][i]['name'] + '/', exist_ok=True)
+    with open('characters/' + jess_dict['data']['characters'][i]['name'] + '/' + jess_dict['data']['characters'][i]['name'] + '.json', 'w', encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
 
 fileObj = codecs.open( "data/data.json", "r", "utf_8_sig" )
 text = fileObj.read()
 jess_dict = json.loads(text)
 
-par(jess_dict['data']['characters'][52]['name_ru'],
-    jess_dict['data']['characters'][52]['name'],
-    jess_dict['data']['characters'][52]['rarity'],
-    jess_dict['data']['characters'][52]['weapon'],
-    jess_dict['data']['characters'][52]['element'])
+print(len(jess_dict['data']['characters']))
+i = 0
+while i < 90:
+    par(jess_dict['data']['characters'][i]['name_ru'],
+        jess_dict['data']['characters'][i]['name'],
+        jess_dict['data']['characters'][i]['rarity'],
+        jess_dict['data']['characters'][i]['weapon'],
+        jess_dict['data']['characters'][i]['element'], i)
+    i += 1
 
 #for i in jess_dict['data']['characters']:
 #    print(i['name_ru'])

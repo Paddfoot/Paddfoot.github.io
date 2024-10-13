@@ -81,7 +81,95 @@ document.querySelector('.vid').src = `../../data/res/${data[targetSegment]['elem
 document.querySelector('.v-bg').load();
 document.querySelector('.element').textContent = elementTranslations[data[targetSegment]['element']];
 document.querySelector('.weapon').textContent = weaponTranslations[data[targetSegment]['weapon']];
+document.querySelector('.region').textContent = data[targetSegment]['region'];
 document.querySelector('.disc').textContent = data[targetSegment]['description'];
+
+function tabs_2() {
+  const tab = document.getElementById('skills');
+  tab.innerHTML = '';
+  const tab_el = document.createElement('div');
+  tab_el.className = 'tabs-2';
+  tab_el.innerHTML = `
+  <span class="gen-text" style="text-align: center;">Таланты</span>
+  <div style="display: grid; grid-template-columns: auto auto auto; justify-content: center; width: 600px;">
+    <button class="tab-button active" onclick="openTab(event, 'skill-1')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_S1.png"><span style="display: flex; align-items: center;">${data[targetSegment]['skills'][0]['skill_name']}</span></button>
+    <button class="tab-button" onclick="openTab(event, 'skill-2')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_S2.png"><span style="display: flex; align-items: center;">${data[targetSegment]['skills'][1]['skill_name']}</span></button>
+    <button class="tab-button" onclick="openTab(event, 'skill-3')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_S3.png"><span style="display: flex; align-items: center;">${data[targetSegment]['skills'][2]['skill_name']}</span></button>
+    <button class="tab-button" onclick="openTab(event, 'skill-4')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_P4.png"><span style="display: flex; align-items: center;">${data[targetSegment]['skills'][3]['skill_name']}</span></button>
+    <button class="tab-button" onclick="openTab(event, 'skill-5')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_P5.png"><span style="display: flex; align-items: center;">${data[targetSegment]['skills'][4]['skill_name']}</span></button>
+    <button class="tab-button" onclick="openTab(event, 'skill-6')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_P6.png"><span style="display: flex; align-items: center;">${data[targetSegment]['skills'][5]['skill_name']}</span></button>
+  </div>
+  <div>
+    <div class="tab-content active" id="skill-1">
+                        <span class="disc_tt gen-text">${data[targetSegment]['skills'][0]['skill_desc']}</span>
+                        </div>
+                        <div class="tab-content" id="skill-2">
+                            <span class="disc_tt gen-text">${data[targetSegment]['skills'][1]['skill_desc']}</span>
+                        </div>
+                    
+                        <div class="tab-content" id="skill-3">
+                            <span class="disc_tt gen-text">${data[targetSegment]['skills'][2]['skill_desc']}</span>
+                        </div>
+                    
+                        <div class="tab-content" id="skill-4">
+                            <span class="disc_tt gen-text">${data[targetSegment]['skills'][3]['skill_desc']}</span>
+                        </div>
+                    
+                        <div class="tab-content" id="skill-5">
+                            <span class="disc_tt gen-text">${data[targetSegment]['skills'][4]['skill_desc']}</span>
+                        </div>
+                        <div class="tab-content" id="skill-6">
+                            <span class="disc_tt gen-text">${data[targetSegment]['skills'][5]['skill_desc']}</span>
+                        </div>
+  </div>
+  `
+  tab.appendChild(tab_el);
+};
+tabs_2();
+
+function tabs_3() {
+  const tab = document.getElementById('pass');
+  tab.innerHTML = '';
+  const tab_el = document.createElement('div');
+  tab_el.className = 'tabs-3';
+  tab_el.innerHTML = `
+  <span class="gen-text" style="text-align: center;">Созвездия</span>
+  <div style="display: grid; grid-template-columns: auto auto auto; justify-content: center; width: 600px;">
+    <button class="tab-button-2 active" onclick="openTab_2(event, 'pass-1')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_C1.png"><span style="display: flex; align-items: center;">${data[targetSegment]['constellations'][0]['const_name']}</span></button>
+    <button class="tab-button-2" onclick="openTab_2(event, 'pass-2')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_C2.png"><span style="display: flex; align-items: center;">${data[targetSegment]['constellations'][1]['const_name']}</span></button>
+    <button class="tab-button-2" onclick="openTab_2(event, 'pass-3')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_C3.png"><span style="display: flex; align-items: center;">${data[targetSegment]['constellations'][2]['const_name']}</span></button>
+    <button class="tab-button-2" onclick="openTab_2(event, 'pass-4')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_C4.png"><span style="display: flex; align-items: center;">${data[targetSegment]['constellations'][3]['const_name']}</span></button>
+    <button class="tab-button-2" onclick="openTab_2(event, 'pass-5')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_C5.png"><span style="display: flex; align-items: center;">${data[targetSegment]['constellations'][4]['const_name']}</span></button>
+    <button class="tab-button-2" onclick="openTab_2(event, 'pass-6')"><img class="s_icon" src="../../data/characters/${targetSegment}/${targetSegment}_C6.png"><span style="display: flex; align-items: center;">${data[targetSegment]['constellations'][5]['const_name']}</span></button>
+  </div>
+  <div>
+    <div class="tab-content-2 active" id="pass-1">
+                        <span class="disc_tt gen-text">${data[targetSegment]['constellations'][0]['const_desc']}</span>
+                        </div>
+                        <div class="tab-content-2" id="pass-2">
+                            <span class="disc_tt gen-text">${data[targetSegment]['constellations'][1]['const_desc']}</span>
+                        </div>
+                    
+                        <div class="tab-content-2" id="pass-3">
+                            <span class="disc_tt gen-text">${data[targetSegment]['constellations'][2]['const_desc']}</span>
+                        </div>
+                    
+                        <div class="tab-content-2" id="pass-4">
+                            <span class="disc_tt gen-text">${data[targetSegment]['constellations'][3]['const_desc']}</span>
+                        </div>
+                    
+                        <div class="tab-content-2" id="pass-5">
+                            <span class="disc_tt gen-text">${data[targetSegment]['constellations'][4]['const_desc']}</span>
+                        </div>
+                        <div class="tab-content-2" id="pass-6">
+                            <span class="disc_tt gen-text">${data[targetSegment]['constellations'][5]['const_desc']}</span>
+                        </div>
+  </div>
+  `
+  tab.appendChild(tab_el);
+};
+tabs_3();
+
 
 async function tabs(tn, lo, lt, ele, elel) {
   const tab = document.getElementById('txt_' + tn);
@@ -97,14 +185,14 @@ async function tabs(tn, lo, lt, ele, elel) {
       <td>Защита</td>
       <td class="attr">${data[targetSegment]['elevation'][ele][lo]['sub']['attr']}</td>
   </tr>
-  <tr>
+  <tr style="text-align: center;">
       <td>${lo}</td>
       <td>${data[targetSegment]['elevation'][ele][lo]['hp']}</td>
       <td>${data[targetSegment]['elevation'][ele][lo]['atc']}</td>
       <td>${data[targetSegment]['elevation'][ele][lo]['def']}</td>
       <td class="par">${data[targetSegment]['elevation'][ele][lo]['sub']['par']}</td>
   </tr>
-  <tr>
+  <tr style="text-align: center;">
       <td>${lt}</td>
       <td>${data[targetSegment]['elevation'][ele][lt]['hp']}</td>
       <td>${data[targetSegment]['elevation'][ele][lt]['atc']}</td>
@@ -112,7 +200,7 @@ async function tabs(tn, lo, lt, ele, elel) {
       <td class="par">${data[targetSegment]['elevation'][ele][lt]['sub']['par']}</td>
   </tr>
   </table>
-    <div>${ff(elel)}</div>
+    <div style="text-align: center; padding: 15px;">${ff(elel)}</div>
   `
   tab.appendChild(tab_el);
 };
@@ -121,7 +209,7 @@ function ff(elel){
   if (elel == '0-0') {
     return ''
   }if (elel == '0-1') {
-    return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex;">
+    return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex; justify-content: center; gap: 8px; padding-top: 8px;">
     <div style="text-align: center; width: 100px;">
         <div style="display: grid; grid-template-columns: auto; justify-items: center;">
             <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
@@ -152,7 +240,7 @@ function ff(elel){
     </div>
 </div>`
   }else{
-    return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex;">
+    return `<span>Материалы возвышения</span><div style="flex-wrap: wrap; display: flex; justify-content: center; gap: 8px; padding-top: 8px;">
     <div style="text-align: center; width: 100px;">
         <div style="display: grid; grid-template-columns: auto; justify-items: center;">
             <img src="../../data/res/${data[targetSegment]['mat'][elel][0]['name']}.webp" style="width: 64px; height: 64px; object-fit: scale-down; background: #6e9dbf;">
@@ -224,3 +312,33 @@ async function loadJSON() {
 }
 
 loadJSON();
+
+function openTab(event, tabName) {
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach(content => {
+      content.classList.remove('active');
+  });
+
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach(button => {
+      button.classList.remove('active');
+  });
+
+  document.getElementById(tabName).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+function openTab_2(event, tabName) {
+  const tabContents = document.querySelectorAll('.tab-content-2');
+  tabContents.forEach(content => {
+      content.classList.remove('active');
+  });
+
+  const tabButtons = document.querySelectorAll('.tab-button-2');
+  tabButtons.forEach(button => {
+      button.classList.remove('active');
+  });
+
+  document.getElementById(tabName).classList.add('active');
+  event.currentTarget.classList.add('active');
+}

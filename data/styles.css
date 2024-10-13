@@ -207,14 +207,11 @@ a, span, th, td {
     grid-template-columns: auto auto;
 }
 
-
-
-
-.tabs { width: 100%; padding: 0px; margin: 0 auto; }
+.tabs { width: 575px; padding: 0px; margin: 0 auto; text-align: center; border: none; margin-top: 10px;}
 .tabs>input { display: none; }
 .tabs>div {
     display: none;
-    padding: 12px;
+    padding: unset;
     border: 1px solid #C0C0C0;
     background: #FFFFFF;
 }
@@ -223,16 +220,18 @@ a, span, th, td {
     padding: 15px 20px;
     margin: 0 -5px -1px 0;
     text-align: center;
-    color: #666666;
+    color: #c1c1c1;
     border: 1px solid #C0C0C0;
-    background: #E0E0E0;
+    background: #1E1E1E;
     cursor: pointer;
+    border: none;
 }
 .tabs>input:checked + label {
-    color: #000000;
+    color: #c1c1c1;
     border: 1px solid #C0C0C0;
     border-bottom: 1px solid #FFFFFF;
-    background: #FFFFFF;
+    background: #2A2A2A;
+    border: none;
 }
 #tab_1:checked ~ #txt_1,
 #tab_2:checked ~ #txt_2,
@@ -244,6 +243,111 @@ a, span, th, td {
     display: block;
     background: unset;
     border: none;
+    width: 575px;
+}
+
+.s_icon {
+    width: 35px;
+}
+
+.skills, .pass {
+    width: 600px;
+}
+
+.fff, .ggg {
+    width: 600px;
+  }
+
+.disc_tt {
+    height: 350px;
+    display: block;
+    overflow: auto;
+    padding: 20px;
+}
+
+#skill-1, #skill-2, #skill-3,
+#skill-4, #skill-5, #skill-6,
+#pass-1, #pass-2, #pass-3,
+#pass-4, #pass-5, #pass-6 {
+    background: #2a2a2a;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+.tabs-2, .tabs-3 {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+}
+
+.tab-button, .tab-button-2 {
+    padding: 10px;
+    border: none;
+    background-color: #1E1E1E;
+    cursor: pointer;
+    text-align: left;
+    width: 180px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    color: #c1c1c1;
+}
+
+.tab-button.active, .tab-button-2.active {
+    background-color: #2A2A2A;
+}
+
+.tab-content, .tab-content-2 {
+    display: none;
+    margin-left: unset;
+}
+
+.tab-content.active, .tab-content-2.active {
+    display: block;
+}
+
+.tab-button:nth-child(1), .tab-button-2:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+.tab-button:nth-child(3), .tab-button-2:nth-child(3) {
+    border-top-right-radius: 10px;
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    background-color: #2a2a2a; /* Тёмный фон таблицы */
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+/* Стили для заголовков таблицы */
+table th {
+    background-color: #3e3e3e; /* Темнее для заголовков */
+    color: #ffffff; /* Белый текст */
+    padding: 10px;
+    text-align: left; /* Выравнивание текста влево */
+    font-weight: bold;
+    border-bottom: 2px solid #444; /* Нижняя граница */
+}
+
+/* Стили для ячеек таблицы */
+table td {
+    padding: 10px;
+    color: #e0e0e0; /* Светлый текст */
+}
+
+/* Стили для четных строк (альтернирование строк) */
+table tr:nth-child(even) {
+    background-color: #333; /* Немного светлее для четных строк */
+}
+
+/* Стили для ссылок внутри таблицы */
+table a {
+    color: #81a2ff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
 }
 
 .cr-name-v {
@@ -303,11 +407,25 @@ a, span, th, td {
 }
 
 @media screen and (max-width: 1023px) {
+    .tabs { width: 100%; padding: 0px; margin: 0 auto; text-align: center; border: none;}
     .l-top {
         width: 380px;
         grid-template-columns: auto;
         background: #0000006b;
     }
+
+    #tab_1:checked ~ #txt_1,
+    #tab_2:checked ~ #txt_2,
+    #tab_3:checked ~ #txt_3,
+    #tab_4:checked ~ #txt_4,
+    #tab_5:checked ~ #txt_5,
+    #tab_6:checked ~ #txt_6,
+    #tab_7:checked ~ #txt_7 {
+    display: block;
+    background: unset;
+    border: none;
+    width: 100%;
+}
 
     .gacha-img {
         object-position: -160px;
