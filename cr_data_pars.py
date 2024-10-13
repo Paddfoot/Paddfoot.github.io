@@ -6,7 +6,7 @@ import json
 import codecs
 import re
 
-def par(n, e, r, w, el, i):
+def par(nid ,n, e, r, w, el, i):
     #temp = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     #print(temp.text)
     url = 'https://genshin-impact.fandom.com/ru/wiki/' + n
@@ -35,7 +35,7 @@ def par(n, e, r, w, el, i):
     constellations = bs.find_all('table', 'wikitable tdc1 tdc2')
     ele = bs.find_all('table', 'wikitable')
     mat = bs2.find_all('table', 'wikitable ascension-stats')
-    data = {e: {
+    data = {nid: {
                 'name': e,
                 'name_ru': name_ru.text,
                 'element': el,
@@ -241,7 +241,7 @@ def par(n, e, r, w, el, i):
                 name = item.find_previous('a')['title']
                 qty = item.text.strip()
                 ascension_data[idx] = {'name': name, 'len': qty}
-            data[e]['mat'][ascension_stages[stage_idx]] = ascension_data
+            data[nid]['mat'][ascension_stages[stage_idx]] = ascension_data
             stage_idx += 1
     print(n)
     os.makedirs('characters/' + jess_dict['data']['characters'][i]['nid'] + '/', exist_ok=True)
@@ -262,7 +262,8 @@ while i < 90:
     elif jess_dict['data']['characters'][i]['nid'] == 'Tohma':
         i += 1
     else:
-        par(jess_dict['data']['characters'][i]['name_ru'],
+        par(jess_dict['data']['characters'][i]['nid'],
+            jess_dict['data']['characters'][i]['name_ru'],
             jess_dict['data']['characters'][i]['name'],
             jess_dict['data']['characters'][i]['rarity'],
             jess_dict['data']['characters'][i]['weapon'],
