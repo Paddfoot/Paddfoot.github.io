@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 import json
 import codecs
+import re
 
 def par(n, e, r, w, el, i):
     #temp = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
@@ -16,7 +17,16 @@ def par(n, e, r, w, el, i):
     bs2 = BeautifulSoup(response2.text,"lxml")
     name_ru = bs.find('h2', 'pi-item pi-item-spacing pi-title pi-secondary-background')
     briefly = bs.find('div', 'pi-data-value pi-font')
-    description = bs.find('div', 'description__text')
+    if bs.find('div', 'description__text') == None:
+        description = 'Отсутствует'
+    else:
+        description = bs.find('div', 'description__text')
+        description = str(description).replace('<br/>', '\n')
+        description = re.sub(r'<.*?>', '', description)
+        #description = description.text
+    print(description)
+    #else:
+        #description = bs.find('span', 'mw-page-title-main')
     #birthday = bs.find_all('div', 'pi-data-value pi-font')
     constellation = bs.find_all('div', 'pi-data-value pi-font')
     region = bs.find_all('div', 'pi-data-value pi-font')
@@ -36,7 +46,7 @@ def par(n, e, r, w, el, i):
                 'constellation': constellation[6].text,
                 'region': region[7].text,
                 #'group': group[0].text,
-                'description': description.text,
+                'description': str(description),
                 'skills': [
                     {
                         'skill_name': skill_1[0].find_all('td')[1].text.rstrip(),
@@ -233,9 +243,9 @@ def par(n, e, r, w, el, i):
                 ascension_data[idx] = {'name': name, 'len': qty}
             data[e]['mat'][ascension_stages[stage_idx]] = ascension_data
             stage_idx += 1
-    #print(data)
-    os.makedirs('characters/' + jess_dict['data']['characters'][i]['name'] + '/', exist_ok=True)
-    with open('characters/' + jess_dict['data']['characters'][i]['name'] + '/' + jess_dict['data']['characters'][i]['name'] + '.json', 'w', encoding="utf-8") as file:
+    print(n)
+    os.makedirs('characters/' + jess_dict['data']['characters'][i]['nid'] + '/', exist_ok=True)
+    with open('characters/' + jess_dict['data']['characters'][i]['nid'] + '/' + jess_dict['data']['characters'][i]['nid'] + '.json', 'w', encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
 fileObj = codecs.open( "data/data.json", "r", "utf_8_sig" )
@@ -245,12 +255,19 @@ jess_dict = json.loads(text)
 print(len(jess_dict['data']['characters']))
 i = 0
 while i < 90:
-    par(jess_dict['data']['characters'][i]['name_ru'],
-        jess_dict['data']['characters'][i]['name'],
-        jess_dict['data']['characters'][i]['rarity'],
-        jess_dict['data']['characters'][i]['weapon'],
-        jess_dict['data']['characters'][i]['element'], i)
-    i += 1
+    if jess_dict['data']['characters'][i]['nid'] == 'PlayerBoy':
+        i += 1
+    elif jess_dict['data']['characters'][i]['nid'] == 'PlayerGirl':
+        i += 1
+    elif jess_dict['data']['characters'][i]['nid'] == 'Tohma':
+        i += 1
+    else:
+        par(jess_dict['data']['characters'][i]['name_ru'],
+            jess_dict['data']['characters'][i]['name'],
+            jess_dict['data']['characters'][i]['rarity'],
+            jess_dict['data']['characters'][i]['weapon'],
+            jess_dict['data']['characters'][i]['element'], i)
+        i += 1
 
 #for i in jess_dict['data']['characters']:
 #    print(i['name_ru'])

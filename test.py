@@ -1,42 +1,56 @@
-from bs4 import BeautifulSoup
+import shutil
+import os
+
+import os
 import json
+from bs4 import BeautifulSoup
 import requests
+import json
+import codecs
+import re
 
-# Загружаем HTML файл
-url2 = 'https://genshin-impact.fandom.com/wiki/Mualani'
+def copy_and_replace_file(src_file, dest_folder):
+    # Проверяем, существует ли исходный файл
+    if not os.path.isfile(src_file):
+        raise FileNotFoundError(f"Исходный файл не найден: {src_file}")
 
-response2 = requests.get(url2)
-bs2 = BeautifulSoup(response2.text,"lxml")
+    # Получаем имя файла из пути
+    file_name = os.path.basename(src_file)
 
-# Парсинг HTML с помощью BeautifulSoup
-soup = BeautifulSoup(response2.text, 'lxml')
+    # Создаем путь для файла в целевой папке
+    dest_file = os.path.join(dest_folder, file_name)
 
-# Ищем все строки таблиц с классом 'ascension-stats' 
-ascension_table = soup.find('table', class_='wikitable ascension-stats')
+    # Копируем файл в папку назначения с заменой, если файл уже существует
+    shutil.copy2(src_file, dest_file)
+    print(f"Файл {file_name} успешно скопирован в {dest_folder} с заменой.")
+
+# Пример использования
+src_file = "data/index.html"
+dest_folder = "/путь/к/целевой/папке"
+
+#copy_and_replace_file(src_file, dest_folder)
 
 
-# Ищем все ряды с ascension costs
-ascension_rows = ascension_table.find_all('tr', id='mw-customcollapsible-toggle-ascension')
-#print(ascension_rows)
+fileObj = codecs.open( "data/data.json", "r", "utf_8_sig" )
+text = fileObj.read()
+jess_dict = json.loads(text)
 
-# Преобразуем данные в нужный формат
-data = {}
+#print(len(jess_dict['data']['characters']))
+i = 0
+while i < 90:
+    if jess_dict['data']['characters'][i]['nid'] == 'PlayerBoy':
+        i += 1
+    elif jess_dict['data']['characters'][i]['nid'] == 'PlayerGirl':
+        i += 1
+    elif jess_dict['data']['characters'][i]['nid'] == 'Tohma':
+        i += 1
+    else:
+        print('characters/' + jess_dict['data']['characters'][i]['nid'] + '/')
+        copy_and_replace_file(src_file, 'characters/' + jess_dict['data']['characters'][i]['nid'] + '/')
+        i += 1
 
-ascension_stages = ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6']
-stage_idx = 0
+#for i in jess_dict['data']['characters']:
+#    print(i['name_ru'])
+#    par(i['name_ru'], i['name'])
 
-# Обрабатываем ряды и собираем данные
-for row in ascension_rows:
-    items = row.find_all('span', class_='card-text card-font')
-    if items:
-        ascension_data = {}
-        for idx, item in enumerate(items):
-            name = item.find_previous('a')['title']
-            qty = item.text.strip()
-            ascension_data[idx] = {'name': name, 'len': qty}
-        data[ascension_stages[stage_idx]] = ascension_data
-        stage_idx += 1
-
-# Преобразование в JSON формат
-json_data = json.dumps(data, ensure_ascii=False, indent=4)
-print(json_data)
+fileObj.close()
